@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SearchToLeads | Marketing Strategy, Performance Marketing & SEO</title>
+
+  <meta name="description" content="SearchToLeads helps businesses turn visibility into qualified leads through marketing strategy, performance marketing, SEO, AEO/GEO, analytics and conversion-focused digital growth.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #172033;
+      background: #ffffff;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: min(1120px, 90%);
+      margin: auto;
+    }
+
+    header {
+      border-bottom: 1px solid #e7ebf0;
+      background: #ffffff;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 0;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: 800;
+      text-decoration: none;
+      color: #172033;
+    }
+
+    .logo span {
+      color: #1769d2;
+    }
+
+    nav a {
+      margin-left: 28px;
+      text-decoration: none;
+      color: #334155;
+      font-weight: 600;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: #1769d2;
+    }
+
+    .hero {
+      padding: 110px 0 100px;
+      background: linear-gradient(135deg, #f8fbff 0%, #eef5ff 100%);
+    }
+
+    .eyebrow {
+      color: #1769d2;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      font-size: 13px;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-size: clamp(46px, 7vw, 76px);
+      line-height: 1.06;
+      max-width: 900px;
+      margin-bottom: 24px;
+    }
+
+    .hero h1 span {
+      color: #1769d2;
+    }
+
+    .hero p {
+      max-width: 760px;
+      color: #5b677a;
+      font-size: 20px;
+      margin-bottom: 34px;
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .btn-primary {
+      background: #1769d2;
+      color: #ffffff;
+    }
+
+    .btn-secondary {
+      border: 1px solid #cbd5e1;
+      color: #172033;
+      background: #ffffff;
+    }
+
+    section {
+      padding: 85px 0;
+    }
+
+    .section-title {
+      font-size: 38px;
+      margin-bottom: 14px;
+    }
+
+    .section-subtitle {
+      color: #657184;
+      max-width: 760px;
+      margin-bottom: 42px;
+      font-size: 18px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      border: 1px solid #e4e9ef;
+      border-radius: 14px;
+      padding: 28px;
+      background: #ffffff;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      font-size: 21px;
+    }
+
+    .card p {
+      color: #64748b;
+      font-size: 15px;
+    }
+
+    .dark {
+      background: #10192b;
+      color: #ffffff;
+    }
+
+    .dark .section-subtitle,
+    .dark p {
+      color: #cbd5e1;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr;
+      gap: 50px;
+      align-items: start;
+    }
+
+    .points {
+      display: grid;
+      gap: 16px;
+    }
+
+    .point {
+      background: #162238;
+      border: 1px solid #26354d;
+      border-radius: 12px;
+      padding: 18px;
+    }
+
+    .point strong {
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .contact {
+      text-align: center;
+      background: #f7faff;
+    }
+
+    .contact h2 {
+      font-size: 42px;
+      margin-bottom: 16px;
+    }
+
+    .contact p {
+      color: #64748b;
+      max-width: 680px;
+      margin: 0 auto 28px;
+      font-size: 18px;
+    }
+
+    footer {
+      border-top: 1px solid #e7ebf0;
+      padding: 26px 0;
+      color: #64748b;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    @media (max-width: 900px) {
+      .cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 700px) {
+      nav {
+        display: none;
+      }
+
+      .hero {
+        padding: 80px 0;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .contact h2 {
+        font-size: 34px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container nav-wrap">
+      <a href="#" class="logo">Search<span>ToLeads</span></a>
+
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container">
+        <div class="eyebrow">MARKETING STRATEGY • PERFORMANCE • SEO • AI SEARCH</div>
+
+        <h1>
+          Turn Search Visibility Into
+          <span>Qualified Leads.</span>
+        </h1>
+
+        <p>
+          SearchToLeads helps businesses connect marketing strategy with measurable digital growth through performance marketing, SEO, AEO/GEO, analytics, conversion optimisation and lead generation.
+        </p>
+
+        <div class="btn-group">
+          <a href="#contact" class="btn btn-primary">Let's Talk</a>
+          <a href="#services" class="btn btn-secondary">Explore Services</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <h2 class="section-title">What We Do</h2>
+
+        <p class="section-subtitle">
+          Strategy-led digital marketing support for businesses that need stronger visibility, better acquisition and measurable growth.
+        </p>
+
+        <div class="cards">
+
+          <div class="card">
+            <h3>Marketing Strategy</h3>
+            <p>
+              Marketing planning, positioning, campaign strategy, channel planning and growth direction aligned with business objectives.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Performance Marketing</h3>
+            <p>
+              Google Ads, Meta Ads, paid acquisition, audience strategy, conversion optimisation and performance measurement.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>SEO + AEO/GEO</h3>
+            <p>
+              Search optimisation across traditional SEO and emerging AI-powered discovery, answer engines and generative search.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Analytics & Conversion</h3>
+            <p>
+              GA4, conversion tracking, funnel analysis, website optimisation and data-led recommendations to improve lead quality.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="dark">
+      <div class="container about-grid">
+
+        <div>
+          <h2 class="section-title">Strategy + Execution</h2>
+
+          <p class="section-subtitle">
+            SearchToLeads is built around a simple principle: marketing strategy should connect directly to execution, measurement and business growth.
+          </p>
+
+          <p>
+            The approach combines senior-level marketing strategy with practical digital expertise across paid media, SEO, content, analytics, websites, lead generation and emerging AI-search visibility.
+          </p>
+        </div>
+
+        <div class="points">
+
+          <div class="point">
+            <strong>Marketing Strategy</strong>
+            Business-led planning, positioning and channel direction.
+          </div>
+
+          <div class="point">
+            <strong>Digital Acquisition</strong>
+            Paid media, SEO and multi-channel lead generation.
+          </div>
+
+          <div class="point">
+            <strong>AI Search Visibility</strong>
+            AEO/GEO strategies for evolving search behaviour.
+          </div>
+
+          <div class="point">
+            <strong>Measurement</strong>
+            Analytics, conversion tracking and performance insights.
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <h2>Ready to Turn Visibility Into Leads?</h2>
+
+        <p>
+          If your business needs stronger marketing strategy, performance marketing, SEO, AI-search visibility or digital growth support, let's connect.
+        </p>
+
+        <a href="mailto:chrissusanphilip@gmail.com" class="btn btn-primary">
+          Contact SearchToLeads
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      © 2026 SearchToLeads. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
