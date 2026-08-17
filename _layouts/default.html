@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>{{ page.title | default: "SearchToLeads" }}</title>
+
+<meta
+  name="description"
+  content="{{ page.description | default: 'Digital marketing consultancy in Dubai helping UAE businesses with marketing strategy, SEO, AEO, GEO, performance marketing and lead generation.' }}">
+
+<meta name="robots" content="index, follow, max-image-preview:large">
+
+{% if page.canonical %}
+<link rel="canonical" href="{{ page.canonical }}">
+{% endif %}
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{ page.title | default: 'SearchToLeads' }}">
+<meta property="og:description" content="{{ page.description }}">
+<meta property="og:url" content="{{ page.canonical }}">
+<meta property="og:site_name" content="SearchToLeads">
+
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="stylesheet" href="/style.css">
+
+
+<!-- =====================================================
+TRACKING CODES
+Add Google Tag Manager / GA4 / Meta Pixel / Clarity here later.
+This automatically applies to every page using this layout.
+===================================================== -->
+
+
+{% if page.schema %}
+<script type="application/ld+json">
+{{ page.schema }}
+</script>
+{% endif %}
+
+</head>
+
+
+<body class="{{ page.body_class }}">
+
+
+{% include header.html %}
+
+
+<main>
+
+{{ content }}
+
+</main>
+
+
+{% include footer.html %}
+
+
+<script>
+
+/* COMBINE COUNTRY CODE + PHONE */
+
+document.querySelectorAll(".lead-form").forEach(function(form){
+
+    form.addEventListener("submit", function(){
+
+        const code =
+        form.querySelector(".country-code");
+
+        const phone =
+        form.querySelector(".phone-number");
+
+        const full =
+        form.querySelector(".full-phone");
+
+        if(code && phone && full){
+
+            full.value =
+            phone.value.trim()
+            ? code.value + " " + phone.value.trim()
+            : "";
+
+        }
+
+    });
+
+});
+
+</script>
+
+
+</body>
+
+</html>
