@@ -2747,3 +2747,34 @@ RESPONSIVE
     }
 
 }
+/* =========================================
+   FIX TESTIMONIAL AVATAR INITIALS
+========================================= */
+
+.testimonial-person {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.testimonial-person .initial {
+  width: 56px;
+  height: 56px;
+  min-width: 56px;
+  min-height: 56px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+
+  border-radius: 50%;
+  line-height: 1;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  position: static;
+}
