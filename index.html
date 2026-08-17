@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,23 +8,28 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Digital Marketing Consultant Dubai | Strategy, SEO & Growth | SearchToLeads</title>
+<title>Digital Marketing Consultant Dubai | SEO, Fractional & Growth | SearchToLeads</title>
 
 <meta name="description"
-content="Digital marketing consultant in Dubai helping UAE businesses with marketing strategy, fractional and outsourced marketing management, SEO, AEO/GEO, performance marketing and lead generation.">
+content="Digital marketing consultant in Dubai helping UAE businesses with fractional and outsourced marketing management, SEO, AEO/GEO, performance marketing and SME growth.">
 
-<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="robots"
+content="index, follow, max-image-preview:large">
 
-<link rel="canonical" href="https://searchtoleads.com/">
+<link rel="canonical"
+href="https://searchtoleads.com/">
 
 
-<meta property="og:type" content="website">
+<!-- OPEN GRAPH -->
+
+<meta property="og:type"
+content="website">
 
 <meta property="og:title"
 content="Digital Marketing Consultant Dubai | SearchToLeads">
 
 <meta property="og:description"
-content="Marketing strategy, fractional marketing management, SEO, AI search and performance marketing for UAE businesses.">
+content="Marketing strategy, fractional marketing management, SEO, AEO/GEO and performance marketing for UAE businesses.">
 
 <meta property="og:url"
 content="https://searchtoleads.com/">
@@ -35,38 +41,33 @@ content="SearchToLeads">
 <meta name="twitter:card"
 content="summary_large_image">
 
-<meta name="twitter:title"
-content="SearchToLeads | Digital Marketing Consultant Dubai">
-
-<meta name="twitter:description"
-content="Strategy-led digital marketing consultancy for UAE businesses.">
-
 
 <style>
 
 :root {
 
     --navy:#07172d;
-    --navy2:#102a4d;
+    --navy2:#102b4f;
 
     --blue:#1268d8;
-    --blue-dark:#084da9;
+    --blue-dark:#074ca8;
 
-    --cyan:#19b7d9;
-    --turquoise:#17c9b2;
+    --cyan:#18b9db;
+    --teal:#18c7ad;
 
-    --orange:#ff9f32;
-    --gold:#f4c34f;
+    --orange:#ff9d35;
+    --gold:#f3c24c;
+    --purple:#755bd6;
 
-    --text:#18243a;
-    --muted:#65738a;
+    --green:#168b61;
+
+    --text:#182439;
+    --muted:#64748b;
 
     --light:#f5f8fc;
     --white:#ffffff;
 
-    --border:#e2e9f1;
-
-    --green:#168a61;
+    --border:#e1e8f0;
 
 }
 
@@ -100,9 +101,9 @@ body {
 
     color:var(--text);
 
-    line-height:1.65;
-
     background:white;
+
+    line-height:1.65;
 
 }
 
@@ -110,6 +111,14 @@ body {
 a {
 
     color:inherit;
+
+}
+
+
+img {
+
+    display:block;
+    max-width:100%;
 
 }
 
@@ -124,9 +133,33 @@ a {
 
 
 
-/* ========================================
+/* ================================
+TOP COLOR BAR
+================================ */
+
+
+.color-bar {
+
+    height:5px;
+
+    background:
+    linear-gradient(
+        90deg,
+        var(--blue),
+        var(--cyan),
+        var(--teal),
+        var(--gold),
+        var(--orange),
+        var(--purple)
+    );
+
+}
+
+
+
+/* ================================
 NAVIGATION
-======================================== */
+================================ */
 
 
 header {
@@ -141,7 +174,7 @@ header {
 
     backdrop-filter:blur(12px);
 
-    border-bottom:1px solid #e7edf4;
+    border-bottom:1px solid var(--border);
 
 }
 
@@ -189,7 +222,7 @@ nav {
 
     align-items:center;
 
-    gap:25px;
+    gap:24px;
 
 }
 
@@ -198,11 +231,11 @@ nav a {
 
     text-decoration:none;
 
+    color:#45546a;
+
     font-size:14px;
 
     font-weight:650;
-
-    color:#45546a;
 
 }
 
@@ -222,59 +255,36 @@ nav a:hover {
 
     border-radius:8px;
 
-    padding:10px 18px;
+    padding:10px 17px;
 
 }
 
 
 
-/* ========================================
-COLOR BANNER
-======================================== */
-
-
-.color-bar {
-
-    height:5px;
-
-    background:
-    linear-gradient(
-        90deg,
-        var(--blue),
-        var(--cyan),
-        var(--turquoise),
-        var(--gold),
-        var(--orange)
-    );
-
-}
-
-
-
-/* ========================================
+/* ================================
 HERO
-======================================== */
+================================ */
 
 
 .hero {
 
-    overflow:hidden;
-
     position:relative;
+
+    overflow:hidden;
 
     background:
 
     radial-gradient(
-        circle at 90% 10%,
-        rgba(25,183,217,.16),
+        circle at 82% 8%,
+        rgba(24,185,219,.15),
         transparent 27%
     ),
 
     linear-gradient(
         135deg,
-        #f9fbff,
-        #edf6ff 58%,
-        #fdfcff
+        #fafcff 0%,
+        #edf6ff 55%,
+        #fbfaff 100%
     );
 
 }
@@ -282,22 +292,24 @@ HERO
 
 .hero-grid {
 
-    min-height:660px;
+    min-height:665px;
+
+    padding:70px 0;
 
     display:grid;
 
-    grid-template-columns:minmax(0,1.05fr) minmax(390px,.95fr);
-
-    align-items:center;
+    grid-template-columns:
+    minmax(0,1.05fr)
+    minmax(390px,.95fr);
 
     gap:65px;
 
-    padding:70px 0;
+    align-items:center;
 
 }
 
 
-.hero-copy-wrap {
+.hero-left {
 
     min-width:0;
 
@@ -318,9 +330,9 @@ HERO
 
     font-weight:850;
 
-    letter-spacing:1.35px;
+    letter-spacing:1.3px;
 
-    margin-bottom:21px;
+    margin-bottom:20px;
 
 }
 
@@ -329,7 +341,7 @@ HERO
 
     content:"";
 
-    width:32px;
+    width:31px;
 
     height:2px;
 
@@ -342,13 +354,13 @@ HERO
 
     max-width:760px;
 
-    font-size:clamp(45px,5.7vw,70px);
+    color:var(--navy);
+
+    font-size:clamp(44px,5.8vw,70px);
 
     line-height:1.035;
 
-    letter-spacing:-2.6px;
-
-    color:var(--navy);
+    letter-spacing:-2.5px;
 
 }
 
@@ -359,8 +371,8 @@ HERO
     linear-gradient(
         90deg,
         var(--blue),
-        #168edc,
-        var(--cyan)
+        var(--cyan),
+        var(--teal)
     );
 
     -webkit-background-clip:text;
@@ -372,11 +384,11 @@ HERO
 
 .hero-text {
 
-    max-width:690px;
+    max-width:720px;
 
-    margin:27px 0 33px;
+    margin:27px 0 31px;
 
-    color:#59687d;
+    color:#58677c;
 
     font-size:18px;
 
@@ -385,7 +397,37 @@ HERO
 
 .hero-text strong {
 
-    color:#35465d;
+    color:#33465f;
+
+}
+
+
+.hero-points {
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:9px;
+
+    margin-bottom:30px;
+
+}
+
+
+.hero-pill {
+
+    background:white;
+
+    border:1px solid #dbe5f1;
+
+    border-radius:999px;
+
+    padding:7px 11px;
+
+    font-size:12px;
+
+    color:#455a72;
 
 }
 
@@ -403,23 +445,31 @@ HERO
 
 .btn {
 
-    display:inline-flex;
-
-    align-items:center;
-
-    justify-content:center;
-
     min-height:50px;
 
     padding:0 23px;
 
-    border-radius:8px;
+    display:inline-flex;
 
-    font-weight:750;
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:8px;
 
     text-decoration:none;
 
-    transition:.2s ease;
+    font-weight:750;
+
+    border:0;
+
+    cursor:pointer;
+
+    font-family:inherit;
+
+    font-size:15px;
+
+    transition:.2s;
 
 }
 
@@ -449,26 +499,26 @@ HERO
 
     background:white;
 
-    border:1px solid #cbd5e1;
-
     color:var(--navy);
+
+    border:1px solid #cad5e2;
 
 }
 
 
 .btn-secondary:hover {
 
-    color:var(--blue);
-
     border-color:var(--blue);
+
+    color:var(--blue);
 
 }
 
 
 
-/* ========================================
-COLORFUL UAE VISUAL
-======================================== */
+/* ================================
+COLORFUL UAE BANNER
+================================ */
 
 
 .hero-visual {
@@ -484,53 +534,51 @@ COLORFUL UAE VISUAL
 }
 
 
-.marketing-banner {
-
-    min-height:435px;
-
-    border-radius:26px;
-
-    overflow:hidden;
+.uae-banner {
 
     position:relative;
 
-    isolation:isolate;
+    min-height:440px;
+
+    overflow:hidden;
+
+    border-radius:25px;
 
     background:
 
     radial-gradient(
-        circle at 75% 15%,
-        rgba(255,195,79,.88),
-        transparent 22%
+        circle at 82% 12%,
+        rgba(255,194,75,.92),
+        transparent 23%
     ),
 
     radial-gradient(
-        circle at 12% 85%,
-        rgba(23,201,178,.60),
-        transparent 35%
+        circle at 10% 88%,
+        rgba(22,207,174,.72),
+        transparent 38%
     ),
 
     linear-gradient(
         145deg,
         #07182f 0%,
-        #0b4ca3 43%,
-        #12a4d7 72%,
-        #18c8b2 100%
+        #0b4ca3 42%,
+        #14a6d9 72%,
+        #18c4ae 100%
     );
 
     box-shadow:
-    0 32px 80px rgba(9,35,74,.20);
+    0 32px 85px rgba(8,36,75,.22);
 
 }
 
 
-.banner-header {
+.banner-copy {
 
     position:relative;
 
-    z-index:8;
+    z-index:10;
 
-    padding:34px 34px 0;
+    padding:34px;
 
     color:white;
 
@@ -539,32 +587,28 @@ COLORFUL UAE VISUAL
 
 .uae-badge {
 
-    display:inline-flex;
-
-    align-items:center;
-
-    gap:7px;
-
-    padding:8px 12px;
+    display:inline-block;
 
     border-radius:999px;
 
     background:rgba(255,255,255,.14);
 
-    border:1px solid rgba(255,255,255,.22);
+    border:1px solid rgba(255,255,255,.23);
+
+    padding:8px 12px;
+
+    margin-bottom:18px;
 
     font-size:12px;
-
-    margin-bottom:19px;
 
 }
 
 
-.banner-header small {
+.banner-copy small {
 
     display:block;
 
-    color:#9deeff;
+    color:#a2eaff;
 
     font-size:11px;
 
@@ -577,139 +621,137 @@ COLORFUL UAE VISUAL
 }
 
 
-.banner-header h2 {
+.banner-copy h2 {
 
     max-width:350px;
 
-    font-size:31px;
+    font-size:30px;
 
-    line-height:1.13;
-
-}
-
-
-.search-orbit {
-
-    position:absolute;
-
-    width:290px;
-
-    height:290px;
-
-    border-radius:50%;
-
-    border:1px solid rgba(255,255,255,.16);
-
-    right:-85px;
-
-    top:95px;
+    line-height:1.15;
 
 }
 
 
-.search-orbit::before {
-
-    content:"";
+.floating {
 
     position:absolute;
 
-    width:190px;
+    z-index:12;
 
-    height:190px;
+    background:rgba(255,255,255,.95);
 
-    border-radius:50%;
+    border-radius:11px;
 
-    border:1px solid rgba(255,255,255,.18);
-
-    left:50px;
-
-    top:50px;
-
-}
-
-
-.floating-card {
-
-    position:absolute;
-
-    z-index:10;
-
-    background:rgba(255,255,255,.94);
+    padding:12px 15px;
 
     box-shadow:
-    0 16px 40px rgba(3,20,43,.16);
-
-    border-radius:12px;
-
-    padding:13px 16px;
-
-    min-width:155px;
+    0 15px 35px rgba(6,28,59,.19);
 
 }
 
 
-.floating-card strong {
-
-    color:var(--navy);
+.floating strong {
 
     display:block;
+
+    color:var(--navy);
 
     font-size:13px;
 
 }
 
 
-.floating-card span {
+.floating span {
 
-    color:#718096;
+    display:block;
+
+    color:#708096;
 
     font-size:11px;
 
 }
 
 
-.card-search {
+.float-search {
 
-    right:28px;
-
-    top:194px;
-
-}
-
-
-.card-ai {
-
-    right:73px;
-
-    top:276px;
+    right:25px;
+    top:190px;
 
 }
 
 
-.card-leads {
+.float-ai {
 
-    left:27px;
-
-    top:280px;
+    right:60px;
+    top:270px;
 
 }
+
+
+.float-lead {
+
+    left:28px;
+    top:285px;
+
+}
+
+
+.orbit {
+
+    position:absolute;
+
+    right:-65px;
+    top:110px;
+
+    width:270px;
+    height:270px;
+
+    border-radius:50%;
+
+    border:
+    1px solid rgba(255,255,255,.15);
+
+}
+
+
+.orbit::after {
+
+    content:"";
+
+    position:absolute;
+
+    left:48px;
+    top:48px;
+
+    width:170px;
+    height:170px;
+
+    border-radius:50%;
+
+    border:
+    1px solid rgba(255,255,255,.16);
+
+}
+
+
+
+/* UAE SKYLINE */
 
 
 .skyline {
 
     position:absolute;
 
+    left:0;
+    right:0;
     bottom:0;
 
-    width:100%;
-
-    height:130px;
+    height:135px;
 
     background:
-
     linear-gradient(
         to top,
-        rgba(3,19,38,.76),
+        rgba(3,18,38,.76),
         transparent
     );
 
@@ -722,21 +764,24 @@ COLORFUL UAE VISUAL
 
     bottom:0;
 
-    background:rgba(255,255,255,.16);
+    background:
+    linear-gradient(
+        to top,
+        rgba(255,255,255,.13),
+        rgba(255,255,255,.32)
+    );
 
     border-left:
-    1px solid rgba(255,255,255,.18);
+    1px solid rgba(255,255,255,.17);
 
 }
 
 
 .t1 {
 
-    left:7%;
-
-    height:60px;
-
+    left:6%;
     width:9%;
+    height:61px;
 
 }
 
@@ -744,10 +789,8 @@ COLORFUL UAE VISUAL
 .t2 {
 
     left:18%;
-
-    height:88px;
-
     width:10%;
+    height:91px;
 
 }
 
@@ -755,10 +798,8 @@ COLORFUL UAE VISUAL
 .t3 {
 
     left:31%;
-
-    height:69px;
-
     width:8%;
+    height:71px;
 
 }
 
@@ -767,9 +808,9 @@ COLORFUL UAE VISUAL
 
     left:46%;
 
-    height:128px;
-
     width:7%;
+
+    height:131px;
 
     clip-path:
     polygon(
@@ -795,41 +836,35 @@ COLORFUL UAE VISUAL
 
 .t5 {
 
-    left:58%;
-
-    height:76px;
-
+    left:59%;
     width:12%;
+    height:78px;
 
 }
 
 
 .t6 {
 
-    left:73%;
-
-    height:101px;
-
+    left:74%;
     width:8%;
+    height:102px;
 
 }
 
 
 .t7 {
 
-    left:84%;
-
-    height:65px;
-
-    width:11%;
+    left:86%;
+    width:10%;
+    height:66px;
 
 }
 
 
 
-/* ========================================
-TRUST STRIP
-======================================== */
+/* ================================
+EXPERIENCE STRIP
+================================ */
 
 
 .trust {
@@ -838,6 +873,8 @@ TRUST STRIP
 
     border-bottom:1px solid var(--border);
 
+    background:white;
+
 }
 
 
@@ -845,7 +882,8 @@ TRUST STRIP
 
     display:grid;
 
-    grid-template-columns:repeat(4,1fr);
+    grid-template-columns:
+    repeat(4,1fr);
 
 }
 
@@ -854,16 +892,17 @@ TRUST STRIP
 
     text-align:center;
 
-    padding:23px 15px;
+    padding:23px 14px;
 
-    border-right:1px solid var(--border);
+    border-right:
+    1px solid var(--border);
 
 }
 
 
 .trust-item:last-child {
 
-    border-right:none;
+    border-right:0;
 
 }
 
@@ -881,22 +920,22 @@ TRUST STRIP
 
 .trust-item span {
 
-    color:var(--muted);
-
     font-size:13px;
+
+    color:var(--muted);
 
 }
 
 
 
-/* ========================================
+/* ================================
 GENERAL
-======================================== */
+================================ */
 
 
 section {
 
-    padding:90px 0;
+    padding:88px 0;
 
 }
 
@@ -909,9 +948,9 @@ section {
 
     font-weight:850;
 
-    letter-spacing:1.3px;
-
     text-transform:uppercase;
+
+    letter-spacing:1.3px;
 
     margin-bottom:10px;
 
@@ -920,11 +959,14 @@ section {
 
 .section-title {
 
+    max-width:840px;
+
     color:var(--navy);
 
-    font-size:clamp(34px,4vw,47px);
+    font-size:
+    clamp(34px,4vw,47px);
 
-    line-height:1.1;
+    line-height:1.12;
 
     letter-spacing:-1.3px;
 
@@ -937,9 +979,9 @@ section {
 
     color:var(--muted);
 
-    max-width:780px;
-
     font-size:18px;
+
+    max-width:790px;
 
     margin-bottom:43px;
 
@@ -947,35 +989,39 @@ section {
 
 
 
-/* ========================================
+/* ================================
 SERVICES
-======================================== */
+================================ */
 
 
 .service-grid {
 
     display:grid;
 
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns:
+    repeat(2,1fr);
 
-    gap:22px;
+    gap:21px;
 
 }
 
 
 .service-card {
 
-    border:1px solid var(--border);
-
-    border-radius:17px;
-
-    padding:30px;
-
     position:relative;
 
     overflow:hidden;
 
-    transition:.2s ease;
+    padding:30px;
+
+    border-radius:17px;
+
+    border:
+    1px solid var(--border);
+
+    background:white;
+
+    transition:.2s;
 
 }
 
@@ -987,11 +1033,9 @@ SERVICES
     position:absolute;
 
     top:0;
-
     left:0;
 
     width:100%;
-
     height:4px;
 
     background:
@@ -999,7 +1043,7 @@ SERVICES
         90deg,
         var(--blue),
         var(--cyan),
-        var(--turquoise)
+        var(--teal)
     );
 
 }
@@ -1011,7 +1055,7 @@ SERVICES
     linear-gradient(
         90deg,
         var(--cyan),
-        var(--turquoise),
+        var(--teal),
         var(--gold)
     );
 
@@ -1037,8 +1081,8 @@ SERVICES
     linear-gradient(
         90deg,
         var(--blue),
-        #7a63dc,
-        #e45aaa
+        var(--purple),
+        #e356a1
     );
 
 }
@@ -1056,17 +1100,16 @@ SERVICES
 
 .service-icon {
 
-    width:44px;
-
-    height:44px;
+    width:45px;
+    height:45px;
 
     display:grid;
 
     place-items:center;
 
-    background:#eef5ff;
-
     border-radius:11px;
+
+    background:#eef5ff;
 
     font-size:20px;
 
@@ -1090,7 +1133,7 @@ SERVICES
 
     color:var(--muted);
 
-    margin-bottom:17px;
+    margin-bottom:16px;
 
 }
 
@@ -1101,9 +1144,7 @@ SERVICES
 
     display:grid;
 
-    gap:8px;
-
-    margin-bottom:20px;
+    gap:7px;
 
 }
 
@@ -1125,88 +1166,62 @@ SERVICES
 
     font-weight:900;
 
-    margin-right:9px;
-
-}
-
-
-.service-note {
-
-    display:inline-block;
-
-    background:#f2f7fd;
-
-    color:#476078;
-
-    border-radius:7px;
-
-    padding:7px 10px;
-
-    margin-top:5px;
-
-    font-size:12px;
+    margin-right:8px;
 
 }
 
 
 
-/* ========================================
-POSITIONING
-======================================== */
+/* ================================
+WHO IT IS FOR
+================================ */
 
 
-.positioning {
+.who {
 
     background:var(--light);
 
 }
 
 
-.position-grid {
+.who-grid {
 
     display:grid;
 
-    grid-template-columns:1.05fr .95fr;
+    grid-template-columns:
+    repeat(4,1fr);
 
-    gap:60px;
-
-    align-items:start;
+    gap:16px;
 
 }
 
 
-.position-list {
-
-    display:grid;
-
-    gap:12px;
-
-}
-
-
-.position-item {
+.who-card {
 
     background:white;
 
-    border:1px solid var(--border);
+    border:
+    1px solid var(--border);
 
-    border-radius:11px;
+    border-radius:12px;
 
-    padding:18px;
+    padding:22px;
 
 }
 
 
-.position-item strong {
+.who-card strong {
 
     display:block;
 
     color:var(--navy);
 
+    margin-bottom:6px;
+
 }
 
 
-.position-item span {
+.who-card p {
 
     color:var(--muted);
 
@@ -1216,9 +1231,292 @@ POSITIONING
 
 
 
-/* ========================================
-DARK SECTION
-======================================== */
+/* ================================
+ABOUT
+================================ */
+
+
+.about-grid {
+
+    display:grid;
+
+    grid-template-columns:.72fr 1.28fr;
+
+    gap:55px;
+
+    align-items:center;
+
+}
+
+
+.headshot-wrap {
+
+    position:relative;
+
+}
+
+
+.headshot {
+
+    width:100%;
+
+    max-width:390px;
+
+    height:470px;
+
+    object-fit:cover;
+
+    object-position:center 30%;
+
+    border-radius:22px;
+
+    box-shadow:
+    0 25px 60px rgba(12,33,65,.14);
+
+}
+
+
+.headshot-tag {
+
+    position:absolute;
+
+    left:20px;
+    bottom:20px;
+
+    max-width:280px;
+
+    padding:13px 16px;
+
+    border-radius:11px;
+
+    background:rgba(7,23,45,.91);
+
+    color:white;
+
+    backdrop-filter:blur(8px);
+
+}
+
+
+.headshot-tag strong {
+
+    display:block;
+
+}
+
+
+.headshot-tag span {
+
+    font-size:12px;
+
+    color:#c9dcf1;
+
+}
+
+
+.about-copy p {
+
+    color:var(--muted);
+
+    margin-bottom:15px;
+
+}
+
+
+.team-note {
+
+    margin-top:23px;
+
+    padding:18px;
+
+    border-left:
+    4px solid var(--cyan);
+
+    border-radius:8px;
+
+    background:#f2f9ff;
+
+    color:#40566f;
+
+}
+
+
+
+/* ================================
+PRICING
+================================ */
+
+
+.pricing {
+
+    background:#f6f9fd;
+
+}
+
+
+.price-grid {
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:20px;
+
+}
+
+
+.price-card {
+
+    position:relative;
+
+    padding:27px;
+
+    border-radius:16px;
+
+    background:white;
+
+    border:
+    1px solid var(--border);
+
+}
+
+
+.price-card.featured {
+
+    border:
+    2px solid var(--blue);
+
+    box-shadow:
+    0 18px 50px rgba(18,104,216,.09);
+
+}
+
+
+.popular {
+
+    position:absolute;
+
+    right:18px;
+    top:18px;
+
+    padding:5px 9px;
+
+    border-radius:999px;
+
+    background:#eaf3ff;
+
+    color:var(--blue);
+
+    font-size:10px;
+
+    font-weight:850;
+
+    letter-spacing:.7px;
+
+}
+
+
+.price-card h3 {
+
+    color:var(--navy);
+
+    font-size:21px;
+
+    margin-bottom:6px;
+
+    padding-right:55px;
+
+}
+
+
+.price {
+
+    color:var(--blue);
+
+    font-size:27px;
+
+    font-weight:900;
+
+    margin:13px 0;
+
+}
+
+
+.price small {
+
+    font-size:13px;
+
+    color:var(--muted);
+
+    font-weight:500;
+
+}
+
+
+.price-card > p {
+
+    color:var(--muted);
+
+    font-size:14px;
+
+    min-height:68px;
+
+    margin-bottom:15px;
+
+}
+
+
+.price-card ul {
+
+    list-style:none;
+
+    display:grid;
+
+    gap:7px;
+
+    margin-bottom:20px;
+
+}
+
+
+.price-card li {
+
+    font-size:13px;
+
+    color:#46576e;
+
+}
+
+
+.price-card li::before {
+
+    content:"✓";
+
+    color:var(--green);
+
+    font-weight:900;
+
+    margin-right:7px;
+
+}
+
+
+.price-small {
+
+    margin-top:25px;
+
+    color:var(--muted);
+
+    font-size:12px;
+
+}
+
+
+
+/* ================================
+WHY
+================================ */
 
 
 .why {
@@ -1239,7 +1537,7 @@ DARK SECTION
 
 .why .section-intro {
 
-    color:#b9c8db;
+    color:#b9c8dc;
 
 }
 
@@ -1248,14 +1546,15 @@ DARK SECTION
 
     display:grid;
 
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:
+    1fr 1fr;
 
     gap:60px;
 
 }
 
 
-.why-items {
+.why-list {
 
     display:grid;
 
@@ -1266,13 +1565,14 @@ DARK SECTION
 
 .why-item {
 
-    background:var(--navy2);
-
-    border:1px solid #294564;
+    padding:18px;
 
     border-radius:11px;
 
-    padding:19px;
+    background:var(--navy2);
+
+    border:
+    1px solid #294463;
 
 }
 
@@ -1283,14 +1583,12 @@ DARK SECTION
 
     color:white;
 
-    margin-bottom:3px;
-
 }
 
 
 .why-item span {
 
-    color:#bac8da;
+    color:#b9c8dc;
 
     font-size:14px;
 
@@ -1298,9 +1596,9 @@ DARK SECTION
 
 
 
-/* ========================================
+/* ================================
 FAQ
-======================================== */
+================================ */
 
 
 .faq {
@@ -1321,28 +1619,29 @@ details {
 
     background:white;
 
-    border:1px solid var(--border);
+    border:
+    1px solid var(--border);
 
     border-radius:10px;
 
-    overflow:hidden;
-
     margin-bottom:10px;
+
+    overflow:hidden;
 
 }
 
 
 summary {
 
-    padding:20px 22px;
-
     cursor:pointer;
 
-    font-weight:750;
+    list-style:none;
 
     color:var(--navy);
 
-    list-style:none;
+    font-weight:750;
+
+    padding:20px 22px;
 
 }
 
@@ -1356,7 +1655,8 @@ summary::-webkit-details-marker {
 
 details p {
 
-    padding:0 22px 22px;
+    padding:
+    0 22px 22px;
 
     color:var(--muted);
 
@@ -1364,20 +1664,19 @@ details p {
 
 
 
-/* ========================================
-CTA
-======================================== */
+/* ================================
+CONTACT FORM
+================================ */
 
 
-.final-cta {
+.contact {
 
     background:
-
     linear-gradient(
-        125deg,
-        #0753bb,
-        #168dd0 55%,
-        #18baa9
+        135deg,
+        #0c55bd,
+        #138ecf 58%,
+        #19bba9
     );
 
     color:white;
@@ -1385,66 +1684,219 @@ CTA
 }
 
 
-.cta-grid {
+.contact .section-title {
+
+    color:white;
+
+}
+
+
+.contact .section-intro {
+
+    color:#e0f2ff;
+
+}
+
+
+.contact-grid {
 
     display:grid;
 
-    grid-template-columns:1.4fr .6fr;
+    grid-template-columns:
+    .85fr 1.15fr;
 
-    gap:40px;
+    gap:55px;
 
-    align-items:center;
-
-}
-
-
-.final-cta h2 {
-
-    font-size:clamp(34px,4vw,47px);
-
-    line-height:1.12;
-
-    margin-bottom:12px;
+    align-items:start;
 
 }
 
 
-.final-cta p {
+.contact-points {
 
-    color:#e2f4ff;
+    display:grid;
+
+    gap:14px;
+
+    margin-top:25px;
 
 }
 
 
-.final-cta .btn {
+.contact-point {
+
+    background:
+    rgba(255,255,255,.11);
+
+    border:
+    1px solid
+    rgba(255,255,255,.17);
+
+    border-radius:10px;
+
+    padding:15px;
+
+}
+
+
+.contact-point strong {
+
+    display:block;
+
+}
+
+
+.contact-point span {
+
+    color:#daf0fb;
+
+    font-size:13px;
+
+}
+
+
+.form-box {
 
     background:white;
 
-    color:var(--blue);
+    color:var(--text);
 
-    justify-self:end;
+    border-radius:17px;
+
+    padding:29px;
+
+    box-shadow:
+    0 25px 60px rgba(4,39,82,.18);
+
+}
+
+
+.form-row {
+
+    display:grid;
+
+    grid-template-columns:
+    1fr 1fr;
+
+    gap:15px;
+
+}
+
+
+.form-group {
+
+    margin-bottom:15px;
+
+}
+
+
+label {
+
+    display:block;
+
+    color:#34465d;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    margin-bottom:6px;
+
+}
+
+
+input,
+select,
+textarea {
+
+    width:100%;
+
+    border:
+    1px solid #d5dee9;
+
+    border-radius:8px;
+
+    padding:12px 13px;
+
+    background:white;
+
+    color:var(--text);
+
+    font-family:inherit;
+
+    font-size:14px;
+
+}
+
+
+input:focus,
+select:focus,
+textarea:focus {
+
+    outline:none;
+
+    border-color:var(--blue);
+
+    box-shadow:
+    0 0 0 3px
+    rgba(18,104,216,.08);
+
+}
+
+
+textarea {
+
+    min-height:125px;
+
+    resize:vertical;
+
+}
+
+
+.consent {
+
+    display:flex;
+
+    gap:9px;
+
+    align-items:flex-start;
+
+    color:#65758b;
+
+    font-size:11px;
+
+    margin-bottom:15px;
+
+}
+
+
+.consent input {
+
+    width:auto;
+
+    margin-top:3px;
 
 }
 
 
 
-/* ========================================
+/* ================================
 FOOTER
-======================================== */
+================================ */
 
 
 footer {
 
     background:#06101f;
 
-    color:#94a5ba;
+    color:#93a5ba;
 
     padding:35px 0;
 
 }
 
 
-.footer-wrap {
+.footer-grid {
 
     display:flex;
 
@@ -1467,14 +1919,17 @@ footer {
 
 
 
-/* ========================================
+/* ================================
 RESPONSIVE
-======================================== */
+================================ */
 
 
 @media(max-width:950px) {
 
-    .hero-grid {
+    .hero-grid,
+    .about-grid,
+    .why-grid,
+    .contact-grid {
 
         grid-template-columns:1fr;
 
@@ -1490,19 +1945,25 @@ RESPONSIVE
     }
 
 
-    .service-grid,
-    .position-grid,
-    .why-grid,
-    .cta-grid {
+    .service-grid {
 
         grid-template-columns:1fr;
 
     }
 
 
-    .final-cta .btn {
+    .who-grid {
 
-        justify-self:start;
+        grid-template-columns:
+        repeat(2,1fr);
+
+    }
+
+
+    .price-grid {
+
+        grid-template-columns:
+        repeat(2,1fr);
 
     }
 
@@ -1520,53 +1981,50 @@ RESPONSIVE
 
     .hero-grid {
 
-        padding:60px 0;
-
         min-height:auto;
+
+        padding:58px 0;
 
     }
 
 
     .hero h1 {
 
-        letter-spacing:-1.6px;
+        letter-spacing:-1.5px;
 
     }
 
 
-    .hero-text {
+    .trust-grid,
+    .price-grid {
 
-        font-size:17px;
-
-    }
-
-
-    .trust-grid {
-
-        grid-template-columns:1fr 1fr;
+        grid-template-columns:
+        1fr 1fr;
 
     }
 
 
-    .trust-item:nth-child(2) {
+    .form-row {
 
-        border-right:none;
+        grid-template-columns:1fr;
 
     }
 
 
     section {
 
-        padding:68px 0;
+        padding:67px 0;
 
     }
 
 }
 
 
-@media(max-width:480px) {
+@media(max-width:520px) {
 
-    .trust-grid {
+    .trust-grid,
+    .who-grid,
+    .price-grid {
 
         grid-template-columns:1fr;
 
@@ -1575,23 +2033,24 @@ RESPONSIVE
 
     .trust-item {
 
-        border-right:none;
+        border-right:0;
 
-        border-bottom:1px solid var(--border);
-
-    }
-
-
-    .marketing-banner {
-
-        min-height:400px;
+        border-bottom:
+        1px solid var(--border);
 
     }
 
 
-    .floating-card {
+    .uae-banner {
 
-        min-width:135px;
+        min-height:420px;
+
+    }
+
+
+    .headshot {
+
+        height:420px;
 
     }
 
@@ -1601,9 +2060,9 @@ RESPONSIVE
 
 
 
-<!-- =====================================
+<!-- ==================================
 STRUCTURED DATA
-===================================== -->
+================================== -->
 
 
 <script type="application/ld+json">
@@ -1625,7 +2084,7 @@ STRUCTURED DATA
 
 "url":"https://searchtoleads.com/",
 
-"description":"Independent digital marketing consultancy helping UAE businesses with marketing strategy, fractional and outsourced marketing management, SEO, AEO/GEO, performance marketing and lead generation.",
+"description":"Independent digital marketing consultancy helping UAE businesses with fractional and outsourced marketing management, SEO, AEO/GEO, performance marketing and SME growth.",
 
 "founder":{
 
@@ -1704,6 +2163,112 @@ STRUCTURED DATA
 
 {
 
+"@type":"ItemList",
+
+"name":"SearchToLeads Digital Marketing Services",
+
+"itemListElement":[
+
+
+{
+
+"@type":"Service",
+
+"position":1,
+
+"name":"Fractional and Outsourced Marketing Manager",
+
+"serviceType":"Fractional Marketing Management",
+
+"description":"Flexible senior marketing strategy and leadership for UAE businesses.",
+
+"provider":{
+
+"@id":"https://searchtoleads.com/#organization"
+
+},
+
+"areaServed":"United Arab Emirates"
+
+},
+
+
+{
+
+"@type":"Service",
+
+"position":2,
+
+"name":"SEO AEO and GEO Services",
+
+"serviceType":"SEO and AI Search Optimisation",
+
+"description":"Search optimisation across traditional SEO, answer engines and generative AI search.",
+
+"provider":{
+
+"@id":"https://searchtoleads.com/#organization"
+
+},
+
+"areaServed":"United Arab Emirates"
+
+},
+
+
+{
+
+"@type":"Service",
+
+"position":3,
+
+"name":"Digital Marketing for SMEs",
+
+"serviceType":"SME Growth Marketing",
+
+"description":"Integrated marketing strategy and digital growth support for small and growing UAE businesses.",
+
+"provider":{
+
+"@id":"https://searchtoleads.com/#organization"
+
+},
+
+"areaServed":"United Arab Emirates"
+
+},
+
+
+{
+
+"@type":"Service",
+
+"position":4,
+
+"name":"Performance Marketing",
+
+"serviceType":"Performance Marketing",
+
+"description":"Google Ads, Meta Ads, conversion and paid acquisition strategy.",
+
+"provider":{
+
+"@id":"https://searchtoleads.com/#organization"
+
+},
+
+"areaServed":"United Arab Emirates"
+
+}
+
+
+]
+
+},
+
+
+{
+
 "@type":"FAQPage",
 
 "mainEntity":[
@@ -1719,7 +2284,7 @@ STRUCTURED DATA
 
 "@type":"Answer",
 
-"text":"A digital marketing consultant helps a business plan and improve its digital marketing across areas such as SEO, paid media, content, websites, analytics and lead generation. The role can include strategy, channel planning, performance analysis and coordination with internal teams, agencies and specialist partners."
+"text":"A digital marketing consultant helps businesses plan and improve digital marketing across SEO, paid media, content, websites, analytics and lead generation. Support can include strategy, channel planning, performance analysis and coordination with internal teams, agencies and specialist partners."
 
 }
 
@@ -1736,7 +2301,7 @@ STRUCTURED DATA
 
 "@type":"Answer",
 
-"text":"SearchToLeads offers flexible independent marketing consultancy that can be structured around project-based consulting, strategic advisory, outsourced marketing management or fractional marketing leadership depending on the business requirement."
+"text":"SearchToLeads offers independent digital marketing consulting that can be structured as project-based consulting, outsourced marketing management or ongoing fractional marketing leadership depending on business requirements."
 
 }
 
@@ -1753,7 +2318,7 @@ STRUCTURED DATA
 
 "@type":"Answer",
 
-"text":"A Fractional Marketing Manager provides experienced marketing leadership on a flexible basis. Support can include strategy, budgeting, channel planning, agency management, team coordination, campaign oversight and performance reporting without requiring the business to immediately hire a full-time senior Marketing Manager."
+"text":"A Fractional Marketing Manager provides experienced marketing leadership on a flexible basis without requiring the business to immediately employ a full-time senior Marketing Manager."
 
 }
 
@@ -1764,13 +2329,13 @@ STRUCTURED DATA
 
 "@type":"Question",
 
-"name":"What is an outsourced marketing manager?",
+"name":"Does SearchToLeads provide execution support?",
 
 "acceptedAnswer":{
 
 "@type":"Answer",
 
-"text":"An outsourced marketing manager acts as an external marketing lead and can coordinate internal staff, agencies, freelancers and specialist partners while providing strategy, planning and marketing performance oversight."
+"text":"SearchToLeads is consultant-led, with Chris Dona remaining the strategic point of contact. Where additional capacity is required, specialist resources can be coordinated across creative, content, video production, web development, paid media and other marketing activities depending on project scope."
 
 }
 
@@ -1787,7 +2352,7 @@ STRUCTURED DATA
 
 "@type":"Answer",
 
-"text":"SEO focuses on visibility in traditional search engines. AEO focuses on helping answer engines understand and surface relevant answers. GEO focuses on improving how brands and content can be discovered and interpreted by generative AI search systems."
+"text":"SEO focuses on traditional search-engine visibility. AEO focuses on helping answer engines understand and surface useful answers. GEO focuses on improving how brands and content can be discovered and interpreted by generative AI search systems."
 
 }
 
@@ -1798,30 +2363,13 @@ STRUCTURED DATA
 
 "@type":"Question",
 
-"name":"Does AEO or GEO replace SEO?",
+"name":"How much does outsourced marketing cost in Dubai?",
 
 "acceptedAnswer":{
 
 "@type":"Answer",
 
-"text":"No. Technical SEO, useful content, search intent, internal linking, site architecture and authority remain important foundations. AEO and GEO extend those principles to newer answer-based and generative search environments."
-
-}
-
-},
-
-
-{
-
-"@type":"Question",
-
-"name":"Is outsourced marketing suitable for SMEs in Dubai?",
-
-"acceptedAnswer":{
-
-"@type":"Answer",
-
-"text":"It can be suitable for SMEs that need experienced marketing direction but do not yet require a large full-time marketing department. The model allows businesses to combine senior marketing leadership with internal teams, agencies and specialist resources."
+"text":"Pricing varies by scope and required support. SearchToLeads offers introductory engagement options including marketing audits, project consulting, SEO and AI-search support, SME growth marketing and fractional marketing management."
 
 }
 
@@ -1843,7 +2391,6 @@ STRUCTURED DATA
 </head>
 
 
-
 <body>
 
 
@@ -1855,37 +2402,28 @@ STRUCTURED DATA
 <div class="container nav-wrap">
 
 
-<a class="logo" href="/">
+<a href="/"
+class="logo">
 
 Search<span>ToLeads</span>
 
 </a>
 
 
-<nav aria-label="Primary navigation">
+<nav>
 
-<a href="#services">
+<a href="#services">Services</a>
 
-Services
+<a href="#about">About</a>
 
-</a>
+<a href="#pricing">Pricing</a>
 
-<a href="#approach">
-
-Approach
-
-</a>
-
-<a href="#faq">
-
-FAQs
-
-</a>
+<a href="#faq">FAQs</a>
 
 <a href="#contact"
 class="nav-cta">
 
-Let's Talk
+Get Started
 
 </a>
 
@@ -1897,12 +2435,12 @@ Let's Talk
 </header>
 
 
-
 <main>
 
 
-
-<!-- HERO -->
+<!-- ==================================
+HERO
+================================== -->
 
 
 <section class="hero">
@@ -1911,8 +2449,7 @@ Let's Talk
 <div class="container hero-grid">
 
 
-
-<div class="hero-copy-wrap">
+<div class="hero-left">
 
 
 <div class="eyebrow">
@@ -1939,12 +2476,47 @@ Built to Generate Leads.
 
 SearchToLeads is an independent
 <strong>digital marketing consultancy in Dubai</strong>
-helping UAE businesses combine marketing strategy with
-fractional and outsourced marketing management,
-SEO, AEO/GEO, performance marketing and measurable
-lead generation.
+helping SMEs and growing UAE businesses access experienced
+marketing strategy through fractional and outsourced marketing
+management, SEO, AEO/GEO, performance marketing and
+measurable lead generation.
 
 </p>
+
+
+<div class="hero-points">
+
+<span class="hero-pill">
+
+Marketing Consultant
+
+</span>
+
+<span class="hero-pill">
+
+Fractional Marketing Manager
+
+</span>
+
+<span class="hero-pill">
+
+Outsourced Marketing
+
+</span>
+
+<span class="hero-pill">
+
+SEO + AEO + GEO
+
+</span>
+
+<span class="hero-pill">
+
+Performance Marketing
+
+</span>
+
+</div>
 
 
 <div class="hero-actions">
@@ -1953,15 +2525,15 @@ lead generation.
 <a href="#contact"
 class="btn btn-primary">
 
-Discuss Your Marketing
+Get a Free 15-Minute Fit Call
 
 </a>
 
 
-<a href="#services"
+<a href="#pricing"
 class="btn btn-secondary">
 
-Explore Services
+View Launch Pricing
 
 </a>
 
@@ -1973,16 +2545,16 @@ Explore Services
 
 
 
-<!-- COLORFUL UAE BANNER -->
+<!-- COLORFUL UAE VISUAL -->
 
 
 <div class="hero-visual">
 
 
-<div class="marketing-banner">
+<div class="uae-banner">
 
 
-<div class="banner-header">
+<div class="banner-copy">
 
 
 <div class="uae-badge">
@@ -1994,15 +2566,15 @@ Explore Services
 
 <small>
 
-SEARCH • DIGITAL • PERFORMANCE
+SEARCH • STRATEGY • PERFORMANCE
 
 </small>
 
 
 <h2>
 
-From visibility to
-qualified enquiries.
+From visibility
+to qualified enquiries.
 
 </h2>
 
@@ -2010,10 +2582,10 @@ qualified enquiries.
 </div>
 
 
-<div class="search-orbit"></div>
+<div class="orbit"></div>
 
 
-<div class="floating-card card-search">
+<div class="floating float-search">
 
 <strong>
 
@@ -2023,14 +2595,14 @@ Google Search
 
 <span>
 
-SEO + intent
+SEO + Intent
 
 </span>
 
 </div>
 
 
-<div class="floating-card card-ai">
+<div class="floating float-ai">
 
 <strong>
 
@@ -2047,7 +2619,7 @@ AEO + GEO
 </div>
 
 
-<div class="floating-card card-leads">
+<div class="floating float-lead">
 
 <strong>
 
@@ -2057,12 +2629,11 @@ Lead Generation
 
 <span>
 
-Conversion focus
+Conversion Focus
 
 </span>
 
 </div>
-
 
 
 <div class="skyline">
@@ -2161,13 +2732,13 @@ Senior Direction
 
 <strong>
 
-UAE + International
+Flexible Support
 
 </strong>
 
 <span>
 
-Multi-Sector Experience
+Consultant-Led + Specialists
 
 </span>
 
@@ -2181,7 +2752,9 @@ Multi-Sector Experience
 
 
 
-<!-- SERVICES -->
+<!-- ==================================
+SERVICES
+================================== -->
 
 
 <section id="services">
@@ -2199,19 +2772,17 @@ Marketing Services
 
 <h2 class="section-title">
 
-Flexible Marketing Support for UAE Businesses
+Flexible Digital Marketing Support for UAE Businesses
 
 </h2>
 
 
 <p class="section-intro">
 
-Choose strategic leadership, specialist digital marketing
-support or an integrated growth model depending on where
-your business is today.
+Choose the level of support that fits your business stage,
+internal resources and growth priorities.
 
 </p>
-
 
 
 <div class="service-grid">
@@ -2237,9 +2808,9 @@ Fractional & Outsourced Marketing Manager
 
 <p>
 
-Senior marketing leadership for companies that need
-strategy, coordination and accountability without
-immediately hiring a full-time senior Marketing Manager.
+Senior marketing direction without immediately hiring
+a full-time senior Marketing Manager or building a large
+internal department.
 
 </p>
 
@@ -2248,24 +2819,19 @@ immediately hiring a full-time senior Marketing Manager.
 
 <li>Marketing strategy and planning</li>
 
-<li>Marketing budget direction</li>
+<li>Budget and channel direction</li>
 
-<li>Team and agency coordination</li>
+<li>Internal team coordination</li>
+
+<li>Agency and vendor management</li>
 
 <li>Campaign oversight</li>
 
-<li>KPI reporting</li>
+<li>KPI and management reporting</li>
 
-<li>Growth planning</li>
+<li>Specialist execution coordination when required</li>
 
 </ul>
-
-
-<span class="service-note">
-
-Also relevant for part-time, virtual and project-based marketing leadership.
-
-</span>
 
 
 </article>
@@ -2291,18 +2857,17 @@ SEO + AEO + GEO
 
 <p>
 
-Search optimisation designed for both Google and the
-evolving world of AI-powered discovery and
-generative search.
+Search visibility across Google and the evolving world
+of AI-powered discovery.
 
 </p>
 
 
 <ul>
 
-<li>Technical SEO</li>
+<li>Technical and on-page SEO</li>
 
-<li>Keyword and search-intent strategy</li>
+<li>Keyword and search-intent research</li>
 
 <li>Content architecture</li>
 
@@ -2310,7 +2875,9 @@ generative search.
 
 <li>Generative Engine Optimisation</li>
 
-<li>AI-search visibility analysis</li>
+<li>Search Console monitoring</li>
+
+<li>AI referral and visibility analysis</li>
 
 </ul>
 
@@ -2339,25 +2906,26 @@ Digital Marketing for SMEs
 <p>
 
 Integrated marketing support for SMEs and founder-led
-businesses that need stronger visibility,
-customer acquisition and marketing structure.
+businesses that need a clearer growth structure.
 
 </p>
 
 
 <ul>
 
-<li>Digital marketing strategy</li>
+<li>Monthly marketing planning</li>
 
-<li>SEO and content</li>
+<li>SEO and content direction</li>
 
-<li>Paid media</li>
+<li>Social-media calendar direction</li>
 
-<li>Social-media direction</li>
+<li>Paid-media oversight</li>
 
-<li>Website and conversion strategy</li>
+<li>Website and conversion recommendations</li>
 
-<li>Analytics and lead funnels</li>
+<li>Analytics and reporting</li>
+
+<li>External execution coordination when required</li>
 
 </ul>
 
@@ -2385,8 +2953,8 @@ Performance Marketing
 
 <p>
 
-Paid acquisition and conversion strategy focused on
-qualified enquiries rather than vanity metrics.
+Paid acquisition focused on qualified enquiries,
+conversion and efficient use of advertising spend.
 
 </p>
 
@@ -2401,9 +2969,11 @@ qualified enquiries rather than vanity metrics.
 
 <li>Remarketing</li>
 
-<li>Landing-page optimisation</li>
+<li>Landing-page recommendations</li>
 
-<li>Campaign and conversion analysis</li>
+<li>Conversion tracking</li>
+
+<li>Campaign optimisation and reporting</li>
 
 </ul>
 
@@ -2421,123 +2991,102 @@ qualified enquiries rather than vanity metrics.
 
 
 
-<!-- POSITIONING -->
+<!-- ==================================
+WHO WE HELP
+================================== -->
 
 
-<section class="positioning">
+<section class="who">
 
 
-<div class="container position-grid">
-
-
-<div>
+<div class="container">
 
 
 <div class="section-kicker">
 
-How You Can Engage
+Who SearchToLeads Helps
 
 </div>
 
 
 <h2 class="section-title">
 
-Consulting Without the Traditional Agency Structure
+Built for Businesses That Need Better Marketing Direction
 
 </h2>
 
 
-<p class="section-intro">
+<div class="who-grid">
 
-SearchToLeads can support companies through strategic
-advisory, project-based consulting, outsourced marketing
-management or ongoing fractional marketing leadership.
 
-</p>
+<div class="who-card">
 
+<strong>
+
+SMEs
+
+</strong>
 
 <p>
 
-If you are searching for a
-<strong>freelance digital marketing consultant in Dubai</strong>,
-the key difference is that SearchToLeads is positioned around
-senior strategy and business outcomes rather than only
-individual campaign execution.
+Businesses that need structure,
+visibility and measurable customer acquisition.
 
 </p>
 
+</div>
+
+
+<div class="who-card">
+
+<strong>
+
+Founder-Led Businesses
+
+</strong>
+
+<p>
+
+Founders currently managing agencies,
+marketing suppliers and campaigns themselves.
+
+</p>
 
 </div>
 
 
-
-<div class="position-list">
-
-
-<div class="position-item">
+<div class="who-card">
 
 <strong>
 
-Marketing Consultant
+Professional Services
 
 </strong>
 
-<span>
+<p>
 
-Strategy, audits, planning and business advisory.
+Legal, corporate services,
+consulting and other expertise-led businesses.
 
-</span>
+</p>
 
 </div>
 
 
-<div class="position-item">
+<div class="who-card">
 
 <strong>
 
-Fractional Marketing Manager
+Growing Teams
 
 </strong>
 
-<span>
+<p>
 
-Ongoing senior marketing direction on a flexible basis.
+Businesses with junior or specialist staff
+that need senior strategic direction.
 
-</span>
-
-</div>
-
-
-<div class="position-item">
-
-<strong>
-
-Outsourced Marketing Manager
-
-</strong>
-
-<span>
-
-External ownership and coordination of the marketing function.
-
-</span>
-
-</div>
-
-
-<div class="position-item">
-
-<strong>
-
-Project-Based Digital Consultant
-
-</strong>
-
-<span>
-
-Focused support around SEO, paid media, analytics or growth projects.
-
-</span>
+</p>
 
 </div>
 
@@ -2552,11 +3101,564 @@ Focused support around SEO, paid media, analytics or growth projects.
 
 
 
-<!-- WHY -->
+<!-- ==================================
+ABOUT
+================================== -->
 
 
-<section id="approach"
-class="why">
+<section id="about">
+
+
+<div class="container about-grid">
+
+
+<div class="headshot-wrap">
+
+
+<img
+src="./chris-dona-headshot.jpg"
+class="headshot"
+alt="Chris Dona, digital marketing consultant in Dubai">
+
+
+<div class="headshot-tag">
+
+<strong>
+
+Chris Dona
+
+</strong>
+
+<span>
+
+Marketing Manager • Digital Marketing Consultant • Dubai
+
+</span>
+
+</div>
+
+
+</div>
+
+
+
+<div class="about-copy">
+
+
+<div class="section-kicker">
+
+About SearchToLeads
+
+</div>
+
+
+<h2 class="section-title">
+
+Senior Marketing Leadership with Practical Digital Experience
+
+</h2>
+
+
+<p>
+
+I’m Chris Dona, a Dubai-based Marketing Manager
+and Digital Marketing Consultant with more than
+15 years of professional experience, including
+more than 10 years in UAE digital marketing.
+
+</p>
+
+
+<p>
+
+My experience combines marketing strategy,
+performance marketing, SEO, AEO/GEO,
+paid media, lead generation, analytics,
+content strategy, websites, CRM,
+social media and multi-brand marketing management.
+
+</p>
+
+
+<p>
+
+Through SearchToLeads, I support SMEs and
+growing businesses that need experienced
+marketing direction without necessarily building
+a large in-house marketing department.
+
+</p>
+
+
+<div class="team-note">
+
+<strong>
+
+Consultant-led. Flexible execution support.
+
+</strong>
+
+<br><br>
+
+I remain the strategic point of contact.
+Where additional execution capacity is required,
+SearchToLeads can coordinate specialist support
+across creative design, content, video production,
+website development, paid media and other
+marketing disciplines depending on project scope.
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+<!-- ==================================
+PRICING
+================================== -->
+
+
+<section id="pricing"
+class="pricing">
+
+
+<div class="container">
+
+
+<div class="section-kicker">
+
+Introductory Launch Pricing
+
+</div>
+
+
+<h2 class="section-title">
+
+Start Small. Scale When It Makes Sense.
+
+</h2>
+
+
+<p class="section-intro">
+
+SearchToLeads is currently offering accessible launch pricing
+for UAE SMEs and growing businesses.
+Final scope is agreed before work begins.
+
+</p>
+
+
+
+<div class="price-grid">
+
+
+
+<div class="price-card">
+
+
+<h3>
+
+Growth Audit Lite
+
+</h3>
+
+
+<div class="price">
+
+AED 750
+
+<small>
+
+one-off
+
+</small>
+
+</div>
+
+
+<p>
+
+Find the biggest gaps and opportunities
+before investing more in marketing.
+
+</p>
+
+
+<ul>
+
+<li>Website and conversion review</li>
+
+<li>SEO visibility review</li>
+
+<li>Paid/social review</li>
+
+<li>Lead-funnel observations</li>
+
+<li>Key competitor observations</li>
+
+<li>30-day priority action plan</li>
+
+<li>45-minute review call</li>
+
+</ul>
+
+
+<a href="#contact"
+class="btn btn-secondary">
+
+Request Audit
+
+</a>
+
+
+</div>
+
+
+
+<div class="price-card featured">
+
+
+<div class="popular">
+
+POPULAR
+
+</div>
+
+
+<h3>
+
+Fractional / Outsourced Marketing Manager
+
+</h3>
+
+
+<div class="price">
+
+From AED 4,500
+
+<small>
+
+/month
+
+</small>
+
+</div>
+
+
+<p>
+
+Flexible senior marketing direction without
+immediately hiring a full-time senior manager.
+
+</p>
+
+
+<ul>
+
+<li>Marketing strategy</li>
+
+<li>Monthly planning</li>
+
+<li>Budget/channel direction</li>
+
+<li>Team and agency coordination</li>
+
+<li>Campaign oversight</li>
+
+<li>Performance reporting</li>
+
+<li>Specialist support coordinated when required</li>
+
+</ul>
+
+
+<a href="#contact"
+class="btn btn-primary">
+
+Discuss Fractional Support
+
+</a>
+
+
+</div>
+
+
+
+<div class="price-card">
+
+
+<h3>
+
+SEO + AEO + GEO
+
+</h3>
+
+
+<div class="price">
+
+From AED 2,500
+
+<small>
+
+/month
+
+</small>
+
+</div>
+
+
+<p>
+
+Search visibility support across Google
+and emerging AI-powered discovery.
+
+</p>
+
+
+<ul>
+
+<li>SEO audit</li>
+
+<li>Keyword strategy</li>
+
+<li>On-page SEO</li>
+
+<li>Content planning</li>
+
+<li>AEO/GEO recommendations</li>
+
+<li>Schema guidance</li>
+
+<li>Search Console monitoring</li>
+
+</ul>
+
+
+<a href="#contact"
+class="btn btn-secondary">
+
+Discuss Search Growth
+
+</a>
+
+
+</div>
+
+
+
+<div class="price-card">
+
+
+<h3>
+
+SME Growth Marketing
+
+</h3>
+
+
+<div class="price">
+
+From AED 3,500
+
+<small>
+
+/month
+
+</small>
+
+</div>
+
+
+<p>
+
+Practical multi-channel marketing support
+for SMEs and founder-led businesses.
+
+</p>
+
+
+<ul>
+
+<li>Monthly marketing plan</li>
+
+<li>SEO/content direction</li>
+
+<li>Social calendar direction</li>
+
+<li>Paid-media oversight</li>
+
+<li>Website/CRO advice</li>
+
+<li>Analytics/reporting</li>
+
+</ul>
+
+
+<a href="#contact"
+class="btn btn-secondary">
+
+Discuss SME Growth
+
+</a>
+
+
+</div>
+
+
+
+<div class="price-card">
+
+
+<h3>
+
+Performance Marketing
+
+</h3>
+
+
+<div class="price">
+
+From AED 2,000
+
+<small>
+
+/month + media spend
+
+</small>
+
+</div>
+
+
+<p>
+
+Paid acquisition strategy and optimisation
+focused on enquiries and conversion.
+
+</p>
+
+
+<ul>
+
+<li>Google Ads</li>
+
+<li>Meta Ads</li>
+
+<li>Audience strategy</li>
+
+<li>Remarketing</li>
+
+<li>Conversion tracking</li>
+
+<li>Monthly optimisation/reporting</li>
+
+</ul>
+
+
+<a href="#contact"
+class="btn btn-secondary">
+
+Discuss Paid Growth
+
+</a>
+
+
+</div>
+
+
+
+<div class="price-card">
+
+
+<h3>
+
+Project-Based Consulting
+
+</h3>
+
+
+<div class="price">
+
+From AED 1,500
+
+<small>
+
+/project
+
+</small>
+
+</div>
+
+
+<p>
+
+For businesses with one defined
+marketing challenge or strategic project.
+
+</p>
+
+
+<ul>
+
+<li>Marketing strategy</li>
+
+<li>Campaign audit</li>
+
+<li>SEO strategy</li>
+
+<li>Content strategy</li>
+
+<li>Website marketing review</li>
+
+<li>Analytics / growth project</li>
+
+</ul>
+
+
+<a href="#contact"
+class="btn btn-secondary">
+
+Discuss Your Project
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+<p class="price-small">
+
+Launch pricing is indicative and depends on scope,
+channels, markets and required execution.
+Advertising spend and third-party production costs
+are separate where applicable.
+Prices can be revised for larger or more complex engagements.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+<!-- ==================================
+WHY SEARCHTOLEADS
+================================== -->
+
+
+<section class="why">
 
 
 <div class="container why-grid">
@@ -2574,17 +3676,16 @@ Why SearchToLeads
 
 <h2 class="section-title">
 
-Marketing Strategy That Stays Close to Execution
+Strategy That Stays Close to Execution
 
 </h2>
 
 
 <p class="section-intro">
 
-The focus is not adding more random marketing activity.
-It is connecting commercial priorities,
-marketing channels, teams, agencies,
-search visibility and performance data.
+You do not need another disconnected marketing report.
+The objective is to connect business priorities,
+marketing activity, people and performance.
 
 </p>
 
@@ -2592,8 +3693,7 @@ search visibility and performance data.
 </div>
 
 
-
-<div class="why-items">
+<div class="why-list">
 
 
 <div class="why-item">
@@ -2606,8 +3706,8 @@ Business Before Channels
 
 <span>
 
-Marketing decisions start with your business,
-customers and commercial goals.
+Marketing decisions begin with
+commercial objectives and customer needs.
 
 </span>
 
@@ -2618,15 +3718,14 @@ customers and commercial goals.
 
 <strong>
 
-Strategy + Practical Expertise
+Senior Direction
 
 </strong>
 
 <span>
 
-Leadership is supported by hands-on experience
-across digital acquisition, SEO, content,
-analytics and websites.
+Strategy backed by practical experience
+across digital marketing channels.
 
 </span>
 
@@ -2643,9 +3742,8 @@ Flexible Resource Model
 
 <span>
 
-Work with internal teams, agencies,
-freelancers and specialist partners
-instead of being locked into one delivery structure.
+Use your own team, existing agencies or
+additional specialist support where needed.
 
 </span>
 
@@ -2662,8 +3760,8 @@ Google + AI Search
 
 <span>
 
-Search strategy considers traditional Google search
-alongside emerging AI-powered discovery.
+Search strategy designed for both
+traditional and emerging discovery.
 
 </span>
 
@@ -2674,14 +3772,14 @@ alongside emerging AI-powered discovery.
 
 <strong>
 
-Measurable Growth
+Lead Focus
 
 </strong>
 
 <span>
 
-Visibility should ultimately contribute to
-qualified enquiries and business outcomes.
+Marketing should ultimately support
+qualified enquiries and business growth.
 
 </span>
 
@@ -2698,7 +3796,9 @@ qualified enquiries and business outcomes.
 
 
 
-<!-- FAQ -->
+<!-- ==================================
+FAQ
+================================== -->
 
 
 <section id="faq"
@@ -2722,18 +3822,7 @@ Digital Marketing Consultant Dubai FAQs
 </h2>
 
 
-<p class="section-intro">
-
-Questions businesses commonly ask about marketing consultants,
-fractional marketing, outsourced marketing,
-SEO and AI-search optimisation.
-
-</p>
-
-
-
 <details>
-
 
 <summary>
 
@@ -2741,50 +3830,42 @@ What does a digital marketing consultant in Dubai do?
 
 </summary>
 
-
 <p>
 
-A digital marketing consultant can help assess and improve
-your digital marketing across SEO, paid advertising,
-content, websites, analytics and lead generation.
-The engagement can include strategy,
+A digital marketing consultant helps businesses
+plan and improve marketing across SEO,
+paid media, content, websites, analytics
+and lead generation.
+Support can include strategy,
 channel planning, performance analysis
 and coordination with internal or external resources.
 
 </p>
 
-
 </details>
 
 
-
 <details>
-
 
 <summary>
 
-Do you offer freelance digital marketing consulting in Dubai?
+Do you offer freelance digital marketing consulting?
 
 </summary>
 
-
 <p>
 
-SearchToLeads offers flexible independent marketing consultancy.
-Engagements can be structured as project-based consulting,
+SearchToLeads offers independent marketing consulting
+that can be structured as project-based support,
 strategic advisory, outsourced marketing management
-or ongoing fractional marketing leadership
-depending on your business requirement.
+or ongoing fractional marketing leadership.
 
 </p>
-
 
 </details>
 
 
-
 <details>
-
 
 <summary>
 
@@ -2792,25 +3873,19 @@ What is a Fractional Marketing Manager?
 
 </summary>
 
-
 <p>
 
-A Fractional Marketing Manager provides experienced
-marketing leadership on a flexible basis.
-Support can include strategy, budgeting,
-channel planning, agency management,
-team coordination, campaign oversight
-and performance reporting.
+A Fractional Marketing Manager provides
+experienced marketing leadership on a flexible basis
+without requiring a business to immediately hire
+a full-time senior Marketing Manager.
 
 </p>
-
 
 </details>
 
 
-
 <details>
-
 
 <summary>
 
@@ -2818,23 +3893,43 @@ What is an outsourced marketing manager?
 
 </summary>
 
-
 <p>
 
-An outsourced marketing manager acts as an external
-marketing lead for the business and can coordinate
-internal staff, agencies, freelancers and specialist
-partners around the overall marketing strategy.
+An outsourced marketing manager works as an
+external marketing lead and can coordinate
+internal employees, agencies, freelancers
+and specialist resources around the
+overall marketing strategy.
 
 </p>
-
 
 </details>
 
 
-
 <details>
 
+<summary>
+
+Does SearchToLeads provide execution support?
+
+</summary>
+
+<p>
+
+Yes, where required.
+SearchToLeads is consultant-led,
+with Chris Dona remaining the strategic point of contact.
+Additional specialist resources can be coordinated
+for creative design, content, video production,
+website development, paid media and other
+marketing activities depending on the project.
+
+</p>
+
+</details>
+
+
+<details>
 
 <summary>
 
@@ -2842,68 +3937,62 @@ What is the difference between SEO, AEO and GEO?
 
 </summary>
 
-
 <p>
 
 SEO focuses on traditional search-engine visibility.
 AEO focuses on helping answer engines understand
 and surface useful answers.
-GEO focuses on strengthening how brands and content
+GEO focuses on improving how brands and content
 can be discovered and interpreted by
 generative AI search systems.
 
 </p>
 
-
 </details>
-
 
 
 <details>
 
-
 <summary>
 
-Does AEO or GEO replace traditional SEO?
+Does AEO or GEO replace SEO?
 
 </summary>
 
-
 <p>
 
-No. Technical SEO, useful content,
-search intent, internal linking,
-site structure and authority remain
-important foundations.
-AEO and GEO build on those foundations
-for newer search experiences.
+No.
+Technical SEO, useful content,
+search intent, site structure,
+internal linking and authority
+remain important foundations.
+AEO and GEO extend those principles
+to newer answer-based and
+generative-search experiences.
 
 </p>
-
 
 </details>
 
 
-
 <details>
-
 
 <summary>
 
-Is outsourced marketing suitable for SMEs in Dubai?
+How much does outsourced marketing cost in Dubai?
 
 </summary>
 
-
 <p>
 
-It can be particularly useful for SMEs
-that need experienced marketing leadership
-but do not yet need a large full-time
-internal marketing department.
+The cost depends on the scope,
+number of channels and level of support required.
+SearchToLeads currently offers introductory launch
+options ranging from one-off audits and projects
+to ongoing SME growth and fractional
+marketing management packages.
 
 </p>
-
 
 </details>
 
@@ -2915,47 +4004,395 @@ internal marketing department.
 
 
 
-<!-- CTA -->
+<!-- ==================================
+CONTACT / LEAD FORM
+================================== -->
 
 
 <section id="contact"
-class="final-cta">
+class="contact">
 
 
-<div class="container cta-grid">
+<div class="container contact-grid">
 
 
 <div>
 
 
-<h2>
+<div class="section-kicker">
 
-Need Better Marketing Direction?
+Let's Talk
+
+</div>
+
+
+<h2 class="section-title">
+
+Tell Me What You Need Help With
 
 </h2>
 
 
-<p>
+<p class="section-intro">
 
-Whether you need a digital marketing consultant,
-fractional marketing leadership,
-outsourced marketing management,
-SEO and AI-search visibility,
-or stronger performance marketing,
-start with a conversation about your business.
+Not sure which service is right?
+Share your current marketing challenge
+and we can start with a short fit discussion.
 
 </p>
+
+
+<div class="contact-points">
+
+
+<div class="contact-point">
+
+<strong>
+
+Low-Commitment Entry
+
+</strong>
+
+<span>
+
+Start with a fit call or AED 750 Growth Audit.
+
+</span>
+
+</div>
+
+
+<div class="contact-point">
+
+<strong>
+
+Flexible Engagement
+
+</strong>
+
+<span>
+
+Project, monthly or fractional support.
+
+</span>
+
+</div>
+
+
+<div class="contact-point">
+
+<strong>
+
+Scalable Execution
+
+</strong>
+
+<span>
+
+Specialist support can be coordinated when required.
+
+</span>
+
+</div>
 
 
 </div>
 
 
-<a href="mailto:chrissusanphilip@gmail.com"
-class="btn">
+</div>
 
-Discuss Your Marketing
 
-</a>
+
+<div class="form-box">
+
+
+<form
+action="https://formsubmit.co/chrissusanphilip@gmail.com"
+method="POST">
+
+
+<input
+type="hidden"
+name="_subject"
+value="New SearchToLeads Website Enquiry">
+
+
+<input
+type="hidden"
+name="_template"
+value="table">
+
+
+<input
+type="text"
+name="_honey"
+style="display:none">
+
+
+<div class="form-row">
+
+
+<div class="form-group">
+
+<label for="name">
+
+Name *
+
+</label>
+
+<input
+id="name"
+type="text"
+name="Name"
+required>
+
+</div>
+
+
+<div class="form-group">
+
+<label for="company">
+
+Company
+
+</label>
+
+<input
+id="company"
+type="text"
+name="Company">
+
+</div>
+
+
+</div>
+
+
+
+<div class="form-row">
+
+
+<div class="form-group">
+
+<label for="email">
+
+Email *
+
+</label>
+
+<input
+id="email"
+type="email"
+name="Email"
+required>
+
+</div>
+
+
+<div class="form-group">
+
+<label for="phone">
+
+Phone / WhatsApp
+
+</label>
+
+<input
+id="phone"
+type="tel"
+name="Phone">
+
+</div>
+
+
+</div>
+
+
+
+<div class="form-group">
+
+<label for="website">
+
+Website
+
+</label>
+
+<input
+id="website"
+type="url"
+name="Website"
+placeholder="https://">
+
+</div>
+
+
+
+<div class="form-row">
+
+
+<div class="form-group">
+
+<label for="service">
+
+What do you need help with? *
+
+</label>
+
+<select
+id="service"
+name="Service"
+required>
+
+<option value="">
+
+Select
+
+</option>
+
+<option>
+
+Marketing Growth Audit
+
+</option>
+
+<option>
+
+Fractional / Outsourced Marketing Manager
+
+</option>
+
+<option>
+
+SEO + AEO + GEO
+
+</option>
+
+<option>
+
+SME Growth Marketing
+
+</option>
+
+<option>
+
+Performance Marketing
+
+</option>
+
+<option>
+
+Project-Based Consulting
+
+</option>
+
+<option>
+
+Not Sure Yet
+
+</option>
+
+</select>
+
+</div>
+
+
+<div class="form-group">
+
+<label for="budget">
+
+Approx. Monthly Marketing Budget
+
+</label>
+
+<select
+id="budget"
+name="Monthly Marketing Budget">
+
+<option>
+
+Prefer not to say
+
+</option>
+
+<option>
+
+Under AED 5,000
+
+</option>
+
+<option>
+
+AED 5,000 – 10,000
+
+</option>
+
+<option>
+
+AED 10,000 – 20,000
+
+</option>
+
+<option>
+
+AED 20,000+
+
+</option>
+
+</select>
+
+</div>
+
+
+</div>
+
+
+
+<div class="form-group">
+
+<label for="message">
+
+Tell me briefly about your marketing challenge *
+
+</label>
+
+<textarea
+id="message"
+name="Marketing Challenge"
+required></textarea>
+
+</div>
+
+
+
+<label class="consent">
+
+<input
+type="checkbox"
+required>
+
+<span>
+
+I agree to be contacted regarding this enquiry.
+
+</span>
+
+</label>
+
+
+
+<button
+type="submit"
+class="btn btn-primary">
+
+Discuss My Marketing
+
+</button>
+
+
+</form>
+
+
+</div>
 
 
 </div>
@@ -2971,7 +4408,7 @@ Discuss Your Marketing
 <footer>
 
 
-<div class="container footer-wrap">
+<div class="container footer-grid">
 
 
 <div>
@@ -3009,3 +4446,4 @@ Dubai, United Arab Emirates
 </body>
 
 </html>
+```
