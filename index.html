@@ -1,398 +1,1458 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>SearchToLeads | Marketing Strategy, Performance Marketing & SEO</title>
+  <title>SearchToLeads | Marketing Strategy, SEO, AEO/GEO & Performance Marketing UAE</title>
 
-  <meta name="description" content="SearchToLeads helps businesses turn visibility into qualified leads through marketing strategy, performance marketing, SEO, AEO/GEO, analytics and conversion-focused digital growth.">
+  <meta name="description"
+        content="SearchToLeads helps UAE businesses turn search visibility into qualified leads through Fractional Marketing Management, SEO, AEO/GEO, performance marketing and SME growth strategy.">
+
+  <meta name="robots" content="index, follow, max-image-preview:large">
+
+  <link rel="canonical" href="https://searchtoleads.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SearchToLeads | Turn Visibility Into Qualified Leads">
+  <meta property="og:description"
+        content="Marketing strategy, Fractional Marketing Management, SEO, AEO/GEO and performance marketing for UAE businesses.">
+  <meta property="og:url" content="https://searchtoleads.com/">
+  <meta property="og:site_name" content="SearchToLeads">
+
+  <!-- Twitter / Social -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SearchToLeads | Marketing Strategy + Digital Growth">
+  <meta name="twitter:description"
+        content="Helping UAE businesses connect marketing strategy, search visibility and performance marketing to qualified lead generation.">
 
   <style>
+    :root {
+      --navy: #0b172a;
+      --navy-light: #142640;
+      --blue: #1769d2;
+      --blue-dark: #0d4fae;
+      --cyan: #28b8d9;
+      --gold: #d7a941;
+      --text: #172033;
+      --muted: #64748b;
+      --light: #f5f8fc;
+      --white: #ffffff;
+      --border: #e3e9f0;
+      --green: #14865b;
+    }
+
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      color: #172033;
-      background: #ffffff;
+      font-family:
+        Inter,
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+      color: var(--text);
+      background: var(--white);
       line-height: 1.6;
     }
 
+    img {
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+    }
+
     .container {
-      width: min(1120px, 90%);
+      width: min(1160px, 90%);
       margin: auto;
     }
 
+    /* NAVIGATION */
+
     header {
-      border-bottom: 1px solid #e7ebf0;
-      background: #ffffff;
       position: sticky;
       top: 0;
       z-index: 1000;
+      background: rgba(255,255,255,.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(226,232,240,.9);
     }
 
     .nav-wrap {
+      min-height: 76px;
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      padding: 18px 0;
+      justify-content: space-between;
+      gap: 30px;
     }
 
     .logo {
-      font-size: 28px;
-      font-weight: 800;
+      font-size: 27px;
+      font-weight: 850;
       text-decoration: none;
-      color: #172033;
+      letter-spacing: -1px;
+      color: var(--navy);
     }
 
     .logo span {
-      color: #1769d2;
+      color: var(--blue);
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 26px;
     }
 
     nav a {
-      margin-left: 28px;
       text-decoration: none;
-      color: #334155;
-      font-weight: 600;
-      font-size: 15px;
+      font-size: 14px;
+      font-weight: 650;
+      color: #45546a;
     }
 
     nav a:hover {
-      color: #1769d2;
+      color: var(--blue);
     }
 
+    .nav-cta {
+      color: white;
+      background: var(--blue);
+      padding: 10px 18px;
+      border-radius: 8px;
+    }
+
+    nav .nav-cta:hover {
+      color: white;
+      background: var(--blue-dark);
+    }
+
+    /* HERO */
+
     .hero {
-      padding: 110px 0 100px;
-      background: linear-gradient(135deg, #f8fbff 0%, #eef5ff 100%);
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 77% 24%, rgba(40,184,217,.22), transparent 24%),
+        radial-gradient(circle at 88% 52%, rgba(23,105,210,.24), transparent 29%),
+        linear-gradient(135deg, #f8fbff 0%, #eef5fd 50%, #f8fbff 100%);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 58%;
+      height: 70%;
+      opacity: .14;
+      background:
+        linear-gradient(90deg, transparent 3%, var(--navy) 3% 5%, transparent 5% 10%),
+        linear-gradient(90deg, transparent 12%, var(--navy) 12% 15%, transparent 15% 22%),
+        linear-gradient(90deg, transparent 24%, var(--navy) 24% 29%, transparent 29% 38%),
+        linear-gradient(90deg, transparent 41%, var(--navy) 41% 46%, transparent 46% 55%),
+        linear-gradient(90deg, transparent 58%, var(--navy) 58% 64%, transparent 64% 74%),
+        linear-gradient(90deg, transparent 78%, var(--navy) 78% 84%, transparent 84%);
+      clip-path: polygon(
+        0 72%, 4% 72%, 4% 49%, 8% 49%, 8% 68%,
+        13% 68%, 13% 30%, 18% 30%, 18% 67%,
+        25% 67%, 25% 45%, 31% 45%, 31% 67%,
+        39% 67%, 39% 16%, 45% 16%, 45% 67%,
+        52% 67%, 52% 38%, 58% 38%, 58% 67%,
+        65% 67%, 65% 22%, 72% 22%, 72% 67%,
+        79% 67%, 79% 43%, 86% 43%, 86% 67%,
+        93% 67%, 93% 29%, 100% 29%, 100% 100%, 0 100%
+      );
+    }
+
+    .hero-grid {
+      min-height: 690px;
+      display: grid;
+      grid-template-columns: 1.12fr .88fr;
+      gap: 55px;
+      align-items: center;
+      position: relative;
+      z-index: 2;
     }
 
     .eyebrow {
-      color: #1769d2;
-      font-weight: 700;
-      letter-spacing: 1.2px;
-      font-size: 13px;
-      margin-bottom: 18px;
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      font-size: 12px;
+      letter-spacing: 1.4px;
+      font-weight: 800;
+      color: var(--blue);
+      margin-bottom: 22px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 31px;
+      height: 2px;
+      background: var(--blue);
     }
 
     .hero h1 {
-      font-size: clamp(46px, 7vw, 76px);
-      line-height: 1.06;
-      max-width: 900px;
-      margin-bottom: 24px;
+      font-size: clamp(47px, 6vw, 75px);
+      line-height: 1.03;
+      letter-spacing: -2.6px;
+      max-width: 780px;
+      color: var(--navy);
     }
 
     .hero h1 span {
-      color: #1769d2;
+      color: var(--blue);
     }
 
-    .hero p {
-      max-width: 760px;
-      color: #5b677a;
-      font-size: 20px;
-      margin-bottom: 34px;
+    .hero-copy {
+      max-width: 720px;
+      font-size: 19px;
+      color: #56657a;
+      margin: 27px 0 34px;
     }
 
-    .btn-group {
+    .hero-actions {
       display: flex;
-      gap: 14px;
+      gap: 13px;
       flex-wrap: wrap;
     }
 
     .btn {
-      display: inline-block;
-      padding: 14px 24px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 50px;
+      padding: 0 23px;
       border-radius: 8px;
+      font-weight: 750;
       text-decoration: none;
-      font-weight: 700;
+      transition: .2s;
     }
 
     .btn-primary {
-      background: #1769d2;
-      color: #ffffff;
+      background: var(--blue);
+      color: white;
+      box-shadow: 0 12px 28px rgba(23,105,210,.19);
+    }
+
+    .btn-primary:hover {
+      background: var(--blue-dark);
+      transform: translateY(-1px);
     }
 
     .btn-secondary {
+      background: white;
       border: 1px solid #cbd5e1;
-      color: #172033;
-      background: #ffffff;
+      color: var(--navy);
     }
 
+    .btn-secondary:hover {
+      border-color: var(--blue);
+      color: var(--blue);
+    }
+
+    .hero-visual {
+      position: relative;
+    }
+
+    .growth-panel {
+      border-radius: 22px;
+      padding: 27px;
+      background: rgba(255,255,255,.87);
+      border: 1px solid rgba(255,255,255,.95);
+      box-shadow: 0 30px 80px rgba(15,31,56,.13);
+      backdrop-filter: blur(12px);
+    }
+
+    .panel-label {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 17px;
+    }
+
+    .growth-line {
+      height: 145px;
+      position: relative;
+      margin-bottom: 20px;
+      background:
+        linear-gradient(#edf2f7 1px, transparent 1px);
+      background-size: 100% 36px;
+      border-bottom: 1px solid #dfe7ef;
+    }
+
+    .growth-line svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .mini-metrics {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 10px;
+    }
+
+    .mini-metric {
+      background: #f7faff;
+      padding: 14px;
+      border-radius: 10px;
+    }
+
+    .mini-metric strong {
+      display: block;
+      color: var(--navy);
+      font-size: 14px;
+    }
+
+    .mini-metric span {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .uae-chip {
+      position: absolute;
+      right: -22px;
+      top: -25px;
+      color: white;
+      background: var(--navy);
+      border-radius: 13px;
+      padding: 15px 18px;
+      font-size: 13px;
+      box-shadow: 0 18px 40px rgba(11,23,42,.18);
+    }
+
+    /* GENERAL */
+
     section {
-      padding: 85px 0;
+      padding: 92px 0;
+    }
+
+    .section-kicker {
+      font-size: 12px;
+      color: var(--blue);
+      font-weight: 800;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
     }
 
     .section-title {
-      font-size: 38px;
-      margin-bottom: 14px;
+      font-size: clamp(34px,4vw,48px);
+      line-height: 1.1;
+      letter-spacing: -1.3px;
+      margin-bottom: 15px;
+      color: var(--navy);
     }
 
-    .section-subtitle {
-      color: #657184;
-      max-width: 760px;
-      margin-bottom: 42px;
+    .section-intro {
+      max-width: 770px;
       font-size: 18px;
+      color: var(--muted);
+      margin-bottom: 44px;
     }
 
-    .cards {
+    /* PACKAGES */
+
+    .packages {
+      background: white;
+    }
+
+    .package-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
+      grid-template-columns: repeat(2,1fr);
+      gap: 22px;
     }
 
-    .card {
-      border: 1px solid #e4e9ef;
-      border-radius: 14px;
-      padding: 28px;
-      background: #ffffff;
-      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+    .package {
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 31px;
+      position: relative;
+      background: white;
+      transition: .2s ease;
     }
 
-    .card h3 {
-      margin-bottom: 12px;
-      font-size: 21px;
+    .package:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 55px rgba(15,23,42,.08);
+      border-color: #c9d9ef;
     }
 
-    .card p {
-      color: #64748b;
-      font-size: 15px;
-    }
-
-    .dark {
-      background: #10192b;
-      color: #ffffff;
-    }
-
-    .dark .section-subtitle,
-    .dark p {
-      color: #cbd5e1;
-    }
-
-    .about-grid {
+    .package-number {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: #edf5ff;
+      color: var(--blue);
       display: grid;
-      grid-template-columns: 1.3fr 1fr;
-      gap: 50px;
+      place-items: center;
+      font-weight: 850;
+      margin-bottom: 20px;
+    }
+
+    .package h3 {
+      color: var(--navy);
+      font-size: 24px;
+      margin-bottom: 9px;
+    }
+
+    .package p {
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
+    .package ul {
+      list-style: none;
+      display: grid;
+      gap: 8px;
+      margin-bottom: 22px;
+    }
+
+    .package li {
+      color: #435269;
+      font-size: 14px;
+    }
+
+    .package li::before {
+      content: "✓";
+      color: var(--green);
+      font-weight: 900;
+      margin-right: 9px;
+    }
+
+    .package a {
+      text-decoration: none;
+      color: var(--blue);
+      font-weight: 750;
+    }
+
+    /* WHY */
+
+    .strategy {
+      background: var(--navy);
+      color: white;
+    }
+
+    .strategy .section-title {
+      color: white;
+    }
+
+    .strategy .section-intro {
+      color: #b8c6d9;
+    }
+
+    .strategy-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 55px;
       align-items: start;
     }
 
-    .points {
+    .strategy-list {
       display: grid;
+      gap: 14px;
+    }
+
+    .strategy-item {
+      background: var(--navy-light);
+      border: 1px solid #29405e;
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    .strategy-item strong {
+      display: block;
+      color: white;
+      margin-bottom: 3px;
+    }
+
+    .strategy-item span {
+      color: #b8c6d9;
+      font-size: 14px;
+    }
+
+    /* CLIENT TYPES */
+
+    .audiences {
+      background: var(--light);
+    }
+
+    .audience-grid {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 17px;
+    }
+
+    .audience {
+      background: white;
+      border-radius: 13px;
+      padding: 23px;
+      border: 1px solid var(--border);
+    }
+
+    .audience strong {
+      color: var(--navy);
+      display: block;
+      margin-bottom: 7px;
+    }
+
+    .audience p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* PROCESS */
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
       gap: 16px;
     }
 
-    .point {
-      background: #162238;
-      border: 1px solid #26354d;
-      border-radius: 12px;
-      padding: 18px;
+    .step {
+      padding: 23px;
+      border-left: 3px solid #dce8f7;
     }
 
-    .point strong {
-      display: block;
-      margin-bottom: 4px;
+    .step span {
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: 850;
     }
 
-    .contact {
-      text-align: center;
+    .step h3 {
+      margin: 8px 0;
+      color: var(--navy);
+    }
+
+    .step p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* FAQ */
+
+    .faq {
       background: #f7faff;
     }
 
-    .contact h2 {
-      font-size: 42px;
-      margin-bottom: 16px;
+    .faq-wrap {
+      max-width: 880px;
     }
 
-    .contact p {
-      color: #64748b;
-      max-width: 680px;
-      margin: 0 auto 28px;
-      font-size: 18px;
+    details {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 11px;
+      margin-bottom: 11px;
+      overflow: hidden;
+    }
+
+    summary {
+      list-style: none;
+      cursor: pointer;
+      padding: 20px 22px;
+      font-weight: 750;
+      color: var(--navy);
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    details p {
+      padding: 0 22px 21px;
+      color: var(--muted);
+    }
+
+    /* CTA */
+
+    .final-cta {
+      background:
+        linear-gradient(135deg,#1769d2,#0c4ea9);
+      color: white;
+    }
+
+    .cta-wrap {
+      display: grid;
+      grid-template-columns: 1.4fr .6fr;
+      gap: 35px;
+      align-items: center;
+    }
+
+    .final-cta h2 {
+      font-size: clamp(34px,4vw,48px);
+      line-height: 1.1;
+      margin-bottom: 13px;
+    }
+
+    .final-cta p {
+      color: #dbeafe;
+      max-width: 700px;
+    }
+
+    .final-cta .btn {
+      background: white;
+      color: var(--blue);
+      justify-self: end;
     }
 
     footer {
-      border-top: 1px solid #e7ebf0;
-      padding: 26px 0;
-      color: #64748b;
-      font-size: 14px;
-      text-align: center;
+      background: #081220;
+      color: #92a4ba;
+      padding: 35px 0;
     }
 
+    .footer-wrap {
+      display: flex;
+      justify-content: space-between;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .footer-brand {
+      color: white;
+      font-weight: 800;
+    }
+
+    /* MOBILE */
+
     @media (max-width: 900px) {
-      .cards {
-        grid-template-columns: repeat(2, 1fr);
+      .hero-grid,
+      .strategy-grid,
+      .cta-wrap {
+        grid-template-columns: 1fr;
       }
 
-      .about-grid {
+      .hero-grid {
+        padding: 75px 0;
+      }
+
+      .hero-visual {
+        max-width: 630px;
+      }
+
+      .package-grid {
         grid-template-columns: 1fr;
+      }
+
+      .audience-grid,
+      .process-grid {
+        grid-template-columns: repeat(2,1fr);
+      }
+
+      .final-cta .btn {
+        justify-self: start;
       }
     }
 
     @media (max-width: 700px) {
-      nav {
+      nav a:not(.nav-cta) {
         display: none;
       }
 
-      .hero {
-        padding: 80px 0;
+      .hero h1 {
+        letter-spacing: -1.6px;
       }
 
-      .cards {
+      .hero-copy {
+        font-size: 17px;
+      }
+
+      .audience-grid,
+      .process-grid,
+      .mini-metrics {
         grid-template-columns: 1fr;
       }
 
-      .contact h2 {
-        font-size: 34px;
+      section {
+        padding: 70px 0;
+      }
+
+      .uae-chip {
+        right: 10px;
       }
     }
   </style>
+
+  <!-- STRUCTURED DATA -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://searchtoleads.com/#organization",
+        "name": "SearchToLeads",
+        "url": "https://searchtoleads.com/",
+        "description": "Marketing consultancy helping UAE businesses connect marketing strategy, SEO, AEO/GEO, performance marketing and lead generation.",
+        "founder": {
+          "@type": "Person",
+          "name": "Chris Dona",
+          "jobTitle": "Marketing Manager and Digital Marketing Strategist"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "United Arab Emirates"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://searchtoleads.com/#website",
+        "url": "https://searchtoleads.com/",
+        "name": "SearchToLeads",
+        "publisher": {
+          "@id": "https://searchtoleads.com/#organization"
+        }
+      },
+      {
+        "@type": "ItemList",
+        "name": "SearchToLeads Marketing Services",
+        "itemListElement": [
+          {
+            "@type": "Service",
+            "position": 1,
+            "name": "Fractional Marketing Manager",
+            "description": "Senior marketing strategy and leadership for businesses that need marketing direction without hiring a full-time Marketing Manager.",
+            "provider": {
+              "@id": "https://searchtoleads.com/#organization"
+            },
+            "areaServed": "United Arab Emirates"
+          },
+          {
+            "@type": "Service",
+            "position": 2,
+            "name": "SEO, AEO and GEO",
+            "description": "Search visibility strategy covering traditional SEO, Answer Engine Optimisation and Generative Engine Optimisation.",
+            "provider": {
+              "@id": "https://searchtoleads.com/#organization"
+            },
+            "areaServed": "United Arab Emirates"
+          },
+          {
+            "@type": "Service",
+            "position": 3,
+            "name": "SME Growth Marketing",
+            "description": "Integrated marketing strategy for SMEs and growing businesses across digital acquisition, content, websites, lead generation and analytics.",
+            "provider": {
+              "@id": "https://searchtoleads.com/#organization"
+            },
+            "areaServed": "United Arab Emirates"
+          },
+          {
+            "@type": "Service",
+            "position": 4,
+            "name": "Performance Marketing",
+            "description": "Paid media and performance strategy across Google Ads, Meta Ads, conversion optimisation and lead generation.",
+            "provider": {
+              "@id": "https://searchtoleads.com/#organization"
+            },
+            "areaServed": "United Arab Emirates"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is a Fractional Marketing Manager?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A Fractional Marketing Manager provides senior marketing leadership on a flexible basis, helping a business develop strategy, manage channels, coordinate teams and agencies, track performance and improve marketing execution without hiring a full-time senior marketing manager."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between SEO, AEO and GEO?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "SEO improves visibility in traditional search engines. AEO focuses on making content easier for answer engines to understand and surface. GEO focuses on improving how a brand and its content are discovered, interpreted and referenced by generative AI search systems."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does AEO or GEO replace traditional SEO?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Strong technical SEO, useful content, authority, clear site structure and entity signals remain important. AEO and GEO build on those foundations by adapting content and brand signals for newer answer-based and generative search experiences."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is SearchToLeads suitable for SMEs in the UAE?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. SearchToLeads is designed to support SMEs and growing businesses that need structured marketing strategy, stronger digital visibility, measurable lead generation and access to senior marketing expertise without necessarily building a large in-house team."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can SearchToLeads manage both strategy and execution?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The approach combines marketing strategy with practical digital marketing expertise. Depending on the engagement, SearchToLeads can provide strategy, channel direction, performance oversight, implementation support and coordination with internal teams, agencies or specialist partners."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body>
 
-  <header>
-    <div class="container nav-wrap">
-      <a href="#" class="logo">Search<span>ToLeads</span></a>
+<header>
+  <div class="container nav-wrap">
 
-      <nav>
-        <a href="#services">Services</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
+    <a class="logo" href="/">
+      Search<span>ToLeads</span>
+    </a>
 
-  <main>
+    <nav aria-label="Primary navigation">
+      <a href="#solutions">Solutions</a>
+      <a href="#approach">Approach</a>
+      <a href="#faq">FAQs</a>
+      <a href="#contact" class="nav-cta">Let's Talk</a>
+    </nav>
 
-    <section class="hero">
-      <div class="container">
-        <div class="eyebrow">MARKETING STRATEGY • PERFORMANCE • SEO • AI SEARCH</div>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="container hero-grid">
+
+      <div>
+
+        <div class="eyebrow">
+          UAE MARKETING STRATEGY • SEARCH • PERFORMANCE
+        </div>
 
         <h1>
-          Turn Search Visibility Into
+          Turn Marketing Visibility Into
           <span>Qualified Leads.</span>
         </h1>
 
-        <p>
-          SearchToLeads helps businesses connect marketing strategy with measurable digital growth through performance marketing, SEO, AEO/GEO, analytics, conversion optimisation and lead generation.
+        <p class="hero-copy">
+          SearchToLeads helps UAE businesses connect
+          <strong>marketing strategy with measurable execution</strong>
+          through Fractional Marketing Management, SEO, AEO/GEO,
+          performance marketing, analytics and lead generation.
         </p>
 
-        <div class="btn-group">
-          <a href="#contact" class="btn btn-primary">Let's Talk</a>
-          <a href="#services" class="btn btn-secondary">Explore Services</a>
-        </div>
-      </div>
-    </section>
+        <div class="hero-actions">
 
-    <section id="services">
-      <div class="container">
-        <h2 class="section-title">What We Do</h2>
+          <a href="#contact" class="btn btn-primary">
+            Discuss Your Growth Strategy
+          </a>
 
-        <p class="section-subtitle">
-          Strategy-led digital marketing support for businesses that need stronger visibility, better acquisition and measurable growth.
-        </p>
-
-        <div class="cards">
-
-          <div class="card">
-            <h3>Marketing Strategy</h3>
-            <p>
-              Marketing planning, positioning, campaign strategy, channel planning and growth direction aligned with business objectives.
-            </p>
-          </div>
-
-          <div class="card">
-            <h3>Performance Marketing</h3>
-            <p>
-              Google Ads, Meta Ads, paid acquisition, audience strategy, conversion optimisation and performance measurement.
-            </p>
-          </div>
-
-          <div class="card">
-            <h3>SEO + AEO/GEO</h3>
-            <p>
-              Search optimisation across traditional SEO and emerging AI-powered discovery, answer engines and generative search.
-            </p>
-          </div>
-
-          <div class="card">
-            <h3>Analytics & Conversion</h3>
-            <p>
-              GA4, conversion tracking, funnel analysis, website optimisation and data-led recommendations to improve lead quality.
-            </p>
-          </div>
+          <a href="#solutions" class="btn btn-secondary">
+            Explore Solutions
+          </a>
 
         </div>
+
       </div>
-    </section>
 
-    <section id="about" class="dark">
-      <div class="container about-grid">
+      <div class="hero-visual">
 
-        <div>
-          <h2 class="section-title">Strategy + Execution</h2>
+        <div class="uae-chip">
+          🇦🇪 UAE-Focused Growth
+        </div>
 
-          <p class="section-subtitle">
-            SearchToLeads is built around a simple principle: marketing strategy should connect directly to execution, measurement and business growth.
-          </p>
+        <div class="growth-panel">
+
+          <div class="panel-label">
+            Search → Strategy → Conversion → Growth
+          </div>
+
+          <div class="growth-line">
+
+            <svg viewBox="0 0 500 150"
+                 preserveAspectRatio="none"
+                 aria-hidden="true">
+
+              <defs>
+                <linearGradient id="area"
+                                x1="0"
+                                x2="0"
+                                y1="0"
+                                y2="1">
+                  <stop offset="0%"
+                        stop-color="#1769d2"
+                        stop-opacity=".30"/>
+                  <stop offset="100%"
+                        stop-color="#1769d2"
+                        stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+
+              <path
+                d="M0,125 C50,120 65,105 100,109
+                   C140,114 160,83 205,89
+                   C245,93 265,61 307,67
+                   C350,73 368,39 410,46
+                   C447,50 466,17 500,24
+                   L500,150 L0,150 Z"
+                fill="url(#area)"
+              />
+
+              <path
+                d="M0,125 C50,120 65,105 100,109
+                   C140,114 160,83 205,89
+                   C245,93 265,61 307,67
+                   C350,73 368,39 410,46
+                   C447,50 466,17 500,24"
+                fill="none"
+                stroke="#1769d2"
+                stroke-width="5"
+                stroke-linecap="round"
+              />
+
+            </svg>
+
+          </div>
+
+          <div class="mini-metrics">
+
+            <div class="mini-metric">
+              <strong>Strategy</strong>
+              <span>Business-led planning</span>
+            </div>
+
+            <div class="mini-metric">
+              <strong>Visibility</strong>
+              <span>Search + AI discovery</span>
+            </div>
+
+            <div class="mini-metric">
+              <strong>Conversion</strong>
+              <span>Qualified lead focus</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SOLUTIONS -->
+
+  <section id="solutions" class="packages">
+
+    <div class="container">
+
+      <div class="section-kicker">
+        Marketing Solutions
+      </div>
+
+      <h2 class="section-title">
+        Choose the Support Your Business Actually Needs
+      </h2>
+
+      <p class="section-intro">
+        SearchToLeads is structured around business needs rather than
+        selling disconnected marketing activities.
+      </p>
+
+      <div class="package-grid">
+
+
+        <article class="package">
+
+          <div class="package-number">01</div>
+
+          <h3>Fractional Marketing Manager</h3>
 
           <p>
-            The approach combines senior-level marketing strategy with practical digital expertise across paid media, SEO, content, analytics, websites, lead generation and emerging AI-search visibility.
+            Senior marketing leadership without the commitment and cost
+            of immediately hiring a full-time senior Marketing Manager.
+          </p>
+
+          <ul>
+            <li>Marketing strategy and planning</li>
+            <li>Budget and channel direction</li>
+            <li>Agency and vendor management</li>
+            <li>Marketing team coordination</li>
+            <li>KPI and management reporting</li>
+            <li>Campaign and growth oversight</li>
+          </ul>
+
+          <a href="/fractional-marketing-manager/">
+            Explore Fractional Marketing →
+          </a>
+
+        </article>
+
+
+        <article class="package">
+
+          <div class="package-number">02</div>
+
+          <h3>SEO + AEO + GEO</h3>
+
+          <p>
+            Build visibility across traditional search and the evolving
+            ecosystem of AI-powered search, answer engines and generative discovery.
+          </p>
+
+          <ul>
+            <li>Technical and on-page SEO</li>
+            <li>Search-intent and keyword strategy</li>
+            <li>Content architecture</li>
+            <li>Answer Engine Optimisation</li>
+            <li>Generative Engine Optimisation</li>
+            <li>AI-search visibility analysis</li>
+          </ul>
+
+          <a href="/seo-aeo-geo/">
+            Explore SEO + AI Search →
+          </a>
+
+        </article>
+
+
+        <article class="package">
+
+          <div class="package-number">03</div>
+
+          <h3>Growth Marketing for SMEs</h3>
+
+          <p>
+            Integrated marketing support for SMEs and growing businesses
+            that need structure, visibility and measurable acquisition.
+          </p>
+
+          <ul>
+            <li>Marketing strategy</li>
+            <li>SEO and content</li>
+            <li>Paid acquisition</li>
+            <li>Social-media direction</li>
+            <li>Website and conversion strategy</li>
+            <li>Analytics and lead-generation funnels</li>
+          </ul>
+
+          <a href="/sme-growth-marketing/">
+            Explore SME Growth Marketing →
+          </a>
+
+        </article>
+
+
+        <article class="package">
+
+          <div class="package-number">04</div>
+
+          <h3>Performance Marketing</h3>
+
+          <p>
+            Data-led paid acquisition focused on generating measurable
+            enquiries and improving the efficiency of digital investment.
+          </p>
+
+          <ul>
+            <li>Google Ads strategy</li>
+            <li>Meta Ads strategy</li>
+            <li>Audience segmentation</li>
+            <li>Remarketing</li>
+            <li>Landing-page optimisation</li>
+            <li>Conversion and performance analysis</li>
+          </ul>
+
+          <a href="/performance-marketing/">
+            Explore Performance Marketing →
+          </a>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- STRATEGY -->
+
+  <section id="approach" class="strategy">
+
+    <div class="container strategy-grid">
+
+      <div>
+
+        <div class="section-kicker">
+          Why SearchToLeads
+        </div>
+
+        <h2 class="section-title">
+          Strategy That Stays Close to Execution
+        </h2>
+
+        <p class="section-intro">
+          SearchToLeads is built for businesses that do not need another
+          disconnected agency report. The focus is connecting business
+          objectives, marketing channels, teams, data and execution.
+        </p>
+
+        <p>
+          The model combines senior-level marketing thinking with practical
+          digital experience across search, paid media, content, websites,
+          analytics and lead generation.
+        </p>
+
+      </div>
+
+
+      <div class="strategy-list">
+
+        <div class="strategy-item">
+          <strong>Business Before Channels</strong>
+          <span>
+            Marketing decisions start with commercial goals rather than
+            automatically choosing a platform.
+          </span>
+        </div>
+
+        <div class="strategy-item">
+          <strong>Strategy + Hands-on Understanding</strong>
+          <span>
+            Leadership is backed by practical experience across digital
+            acquisition, SEO, analytics and conversion.
+          </span>
+        </div>
+
+        <div class="strategy-item">
+          <strong>Search Beyond Google</strong>
+          <span>
+            Search strategy considers traditional search alongside emerging
+            AI discovery and answer-based behaviour.
+          </span>
+        </div>
+
+        <div class="strategy-item">
+          <strong>Measurement Matters</strong>
+          <span>
+            Visibility is useful only when it contributes to meaningful
+            engagement, enquiries and business outcomes.
+          </span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- AUDIENCE -->
+
+  <section class="audiences">
+
+    <div class="container">
+
+      <div class="section-kicker">
+        Who We Work With
+      </div>
+
+      <h2 class="section-title">
+        Built for UAE Businesses Ready to Grow
+      </h2>
+
+      <p class="section-intro">
+        Flexible marketing support for organisations that need expertise
+        without unnecessarily building a large internal marketing structure.
+      </p>
+
+      <div class="audience-grid">
+
+        <div class="audience">
+          <strong>SMEs</strong>
+          <p>
+            Businesses that need marketing structure, acquisition and
+            measurable growth.
           </p>
         </div>
 
-        <div class="points">
+        <div class="audience">
+          <strong>Professional Services</strong>
+          <p>
+            Legal, corporate, consulting and advisory businesses competing
+            for high-intent enquiries.
+          </p>
+        </div>
 
-          <div class="point">
-            <strong>Marketing Strategy</strong>
-            Business-led planning, positioning and channel direction.
-          </div>
+        <div class="audience">
+          <strong>Growing Companies</strong>
+          <p>
+            Organisations that have marketing activity but need stronger
+            strategic direction.
+          </p>
+        </div>
 
-          <div class="point">
-            <strong>Digital Acquisition</strong>
-            Paid media, SEO and multi-channel lead generation.
-          </div>
-
-          <div class="point">
-            <strong>AI Search Visibility</strong>
-            AEO/GEO strategies for evolving search behaviour.
-          </div>
-
-          <div class="point">
-            <strong>Measurement</strong>
-            Analytics, conversion tracking and performance insights.
-          </div>
-
+        <div class="audience">
+          <strong>Founder-Led Businesses</strong>
+          <p>
+            Founders who need senior marketing support without immediately
+            hiring a full internal department.
+          </p>
         </div>
 
       </div>
-    </section>
 
-    <section id="contact" class="contact">
-      <div class="container">
+    </div>
 
-        <h2>Ready to Turn Visibility Into Leads?</h2>
+  </section>
 
-        <p>
-          If your business needs stronger marketing strategy, performance marketing, SEO, AI-search visibility or digital growth support, let's connect.
-        </p>
 
-        <a href="mailto:chrissusanphilip@gmail.com" class="btn btn-primary">
-          Contact SearchToLeads
-        </a>
+  <!-- PROCESS -->
+
+  <section>
+
+    <div class="container">
+
+      <div class="section-kicker">
+        The Process
+      </div>
+
+      <h2 class="section-title">
+        From Search Visibility to Business Growth
+      </h2>
+
+      <div class="process-grid">
+
+        <div class="step">
+          <span>01</span>
+          <h3>Diagnose</h3>
+          <p>
+            Understand the business, market, existing channels,
+            competitors and acquisition gaps.
+          </p>
+        </div>
+
+        <div class="step">
+          <span>02</span>
+          <h3>Strategise</h3>
+          <p>
+            Define priorities, target audiences, channels,
+            positioning and measurable objectives.
+          </p>
+        </div>
+
+        <div class="step">
+          <span>03</span>
+          <h3>Execute</h3>
+          <p>
+            Coordinate implementation across the right combination
+            of internal teams, specialists and channels.
+          </p>
+        </div>
+
+        <div class="step">
+          <span>04</span>
+          <h3>Optimise</h3>
+          <p>
+            Use performance and search data to improve visibility,
+            conversion and marketing efficiency.
+          </p>
+        </div>
 
       </div>
-    </section>
 
-  </main>
-
-  <footer>
-    <div class="container">
-      © 2026 SearchToLeads. All rights reserved.
     </div>
-  </footer>
+
+  </section>
+
+
+  <!-- FAQ -->
+
+  <section id="faq" class="faq">
+
+    <div class="container faq-wrap">
+
+      <div class="section-kicker">
+        Frequently Asked Questions
+      </div>
+
+      <h2 class="section-title">
+        SearchToLeads FAQs
+      </h2>
+
+      <p class="section-intro">
+        Common questions about Fractional Marketing Management,
+        SEO, AI search and growth marketing.
+      </p>
+
+
+      <details>
+        <summary>
+          What is a Fractional Marketing Manager?
+        </summary>
+
+        <p>
+          A Fractional Marketing Manager provides senior marketing
+          leadership on a flexible basis. The role can include strategy,
+          budget direction, channel planning, agency or vendor management,
+          team coordination and performance reporting without requiring
+          the business to immediately hire a full-time senior Marketing Manager.
+        </p>
+      </details>
+
+
+      <details>
+        <summary>
+          What is the difference between SEO, AEO and GEO?
+        </summary>
+
+        <p>
+          SEO focuses on improving visibility in traditional search engines.
+          AEO focuses on structuring content so answer engines can understand
+          and surface useful answers. GEO focuses on improving how brands,
+          expertise and content are discovered and interpreted by generative
+          AI search systems.
+        </p>
+      </details>
+
+
+      <details>
+        <summary>
+          Does AEO or GEO replace traditional SEO?
+        </summary>
+
+        <p>
+          No. Technical SEO, useful content, site architecture, authority,
+          internal linking and clear business information remain important.
+          AEO and GEO extend those foundations for newer answer-based and
+          generative-search experiences.
+        </p>
+      </details>
+
+
+      <details>
+        <summary>
+          Is SearchToLeads suitable for SMEs in the UAE?
+        </summary>
+
+        <p>
+          Yes. The service model is particularly relevant to SMEs and
+          growing businesses that need structured marketing strategy,
+          improved digital visibility and stronger lead-generation
+          processes without necessarily building a large in-house team.
+        </p>
+      </details>
+
+
+      <details>
+        <summary>
+          Can SearchToLeads manage both strategy and execution?
+        </summary>
+
+        <p>
+          The approach combines strategic marketing leadership with
+          practical digital expertise. Depending on the engagement,
+          SearchToLeads can provide strategy, implementation support,
+          performance oversight and coordination with internal teams,
+          agencies or specialist partners.
+        </p>
+      </details>
+
+
+      <details>
+        <summary>
+          How do you measure marketing performance?
+        </summary>
+
+        <p>
+          Measurement should be aligned with the business objective.
+          Depending on the engagement, this can include search visibility,
+          qualified enquiries, conversion rates, paid-media efficiency,
+          landing-page performance, engagement, channel contribution
+          and other measurable acquisition indicators.
+        </p>
+      </details>
+
+    </div>
+
+  </section>
+
+
+  <!-- CTA -->
+
+  <section id="contact" class="final-cta">
+
+    <div class="container cta-wrap">
+
+      <div>
+
+        <h2>
+          Need Better Marketing Direction?
+        </h2>
+
+        <p>
+          Whether you need a Fractional Marketing Manager,
+          stronger search visibility or a more structured digital
+          growth strategy, start with a conversation about the
+          business problem you are trying to solve.
+        </p>
+
+      </div>
+
+      <a class="btn"
+         href="mailto:YOUR-EMAIL-HERE">
+        Discuss Your Marketing
+      </a>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<footer>
+
+  <div class="container footer-wrap">
+
+    <div>
+      <span class="footer-brand">SearchToLeads</span>
+      <br>
+      Marketing Strategy + Digital Growth
+    </div>
+
+    <div>
+      Dubai, United Arab Emirates
+      <br>
+      © 2026 SearchToLeads
+    </div>
+
+  </div>
+
+</footer>
 
 </body>
 </html>
+```
