@@ -1,0 +1,24 @@
+---
+layout: null
+---
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+{% for page in site.pages %}
+
+{% unless page.sitemap == false
+   or page.url contains "404.html"
+   or page.url contains "sitemap.xml"
+   or page.url contains "robots.txt" %}
+
+<url>
+    <loc>https://searchtoleads.com{{ page.url | replace: "index.html", "" }}</loc>
+</url>
+
+{% endunless %}
+
+{% endfor %}
+
+</urlset>
