@@ -2794,3 +2794,23 @@ RESPONSIVE
   left: auto !important;
   transform: none !important;
 }
+/* =========================================
+   FIX PHONE NUMBER FIELD WIDTH
+========================================= */
+
+.phone-row {
+  display: grid !important;
+  grid-template-columns: 130px minmax(0, 1fr) !important;
+  gap: 10px;
+  width: 100%;
+}
+
+.phone-row .country-code {
+  width: 100% !important;
+  min-width: 0;
+}
+
+.phone-row .phone-number {
+  width: 100% !important;
+  min-width: 0;
+}
