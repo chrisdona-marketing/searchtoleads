@@ -1,0 +1,25 @@
+---
+layout: null
+permalink: /search.json
+---
+
+[
+{% assign searchable_pages = site.pages | where_exp: "item", "item.title" %}
+
+{% for page in searchable_pages %}
+
+  {% unless page.url contains "/404" or page.url contains "/search.json" or page.url contains "/sitemap.xml" %}
+
+  {
+    "title": {{ page.title | jsonify }},
+    "url": {{ page.url | jsonify }},
+    "description": {{ page.description | default: page.excerpt | strip_html | strip_newlines | truncate: 180 | jsonify }},
+    "content": {{ page.content | strip_html | strip_newlines | replace: "  ", " " | truncate: 600 | jsonify }}
+  }
+
+  {% unless forloop.last %},{% endunless %}
+
+  {% endunless %}
+
+{% endfor %}
+]
