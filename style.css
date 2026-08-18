@@ -3525,3 +3525,536 @@ BLOG ARTICLE - SEO AEO GEO DUBAI
     }
 
 }
+/* =========================================================
+   FINAL SEARCH DESIGN
+   KEEP AT VERY BOTTOM OF STYLE.CSS
+   ========================================================= */
+
+header {
+    position: relative;
+}
+
+
+/* -----------------------------------------
+   DESKTOP SEARCH BUTTON
+   ----------------------------------------- */
+
+.header-search-toggle {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+
+    padding: 0;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ffffff;
+
+    color: #07172d;
+
+    border: 1px solid #dbe4ee;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    box-shadow: none;
+
+    transition:
+        background .2s ease,
+        border-color .2s ease,
+        transform .2s ease;
+}
+
+
+.header-search-toggle:hover {
+
+    background: #f5f8fc;
+
+    border-color: #b9c8d8;
+
+    transform: translateY(-1px);
+
+}
+
+
+.header-search-toggle svg {
+
+    width: 18px;
+
+    height: 18px;
+
+    display: block;
+
+}
+
+
+.header-search-toggle .search-button-text {
+
+    display: none;
+
+}
+
+
+/* -----------------------------------------
+   SEARCH PANEL
+   ----------------------------------------- */
+
+.site-search-panel {
+
+    position: absolute;
+
+    top: 100%;
+
+    left: 0;
+
+    right: 0;
+
+    z-index: 1600;
+
+    background: #ffffff;
+
+    border-top: 1px solid #e5ebf2;
+
+    border-bottom: 1px solid #e5ebf2;
+
+    box-shadow:
+        0 24px 55px
+        rgba(7,23,45,.15);
+
+}
+
+
+.site-search-panel[hidden] {
+
+    display: none !important;
+
+}
+
+
+.site-search-inner {
+
+    max-width: 900px;
+
+    padding-top: 28px;
+
+    padding-bottom: 32px;
+
+}
+
+
+.site-search-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    gap: 20px;
+
+    margin-bottom: 18px;
+
+}
+
+
+.site-search-label {
+
+    color: #1769d2;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: .14em;
+
+}
+
+
+.site-search-header h2 {
+
+    margin: 4px 0 0;
+
+    color: #07172d;
+
+    font-size: 26px;
+
+    line-height: 1.2;
+
+}
+
+
+.site-search-close {
+
+    width: 38px;
+
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 0;
+
+    color: #07172d;
+
+    background: #ffffff;
+
+    border: 1px solid #dbe4ee;
+
+    border-radius: 50%;
+
+    font-size: 25px;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+}
+
+
+/* -----------------------------------------
+   SEARCH FIELD
+   ----------------------------------------- */
+
+.site-search-input-wrap {
+
+    min-height: 56px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 0 18px;
+
+    background: #ffffff;
+
+    border: 1px solid #cbd7e4;
+
+    border-radius: 13px;
+
+}
+
+
+.site-search-input-wrap:focus-within {
+
+    border-color: #1769d2;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(23,105,210,.08);
+
+}
+
+
+.site-search-input-wrap svg {
+
+    flex: 0 0 auto;
+
+    color: #64768a;
+
+}
+
+
+#site-search-input {
+
+    width: 100%;
+
+    border: 0;
+
+    outline: 0;
+
+    background: transparent;
+
+    color: #07172d;
+
+    font: inherit;
+
+    font-size: 16px;
+
+}
+
+
+#site-search-input::placeholder {
+
+    color: #8292a4;
+
+}
+
+
+/* -----------------------------------------
+   STATUS
+   ----------------------------------------- */
+
+.site-search-status {
+
+    margin: 13px 2px 8px;
+
+    color: #6c7e91;
+
+    font-size: 13px;
+
+}
+
+
+/* -----------------------------------------
+   SEARCH RESULTS
+   ----------------------------------------- */
+
+.site-search-results {
+
+    display: grid;
+
+    gap: 9px;
+
+    max-height: 420px;
+
+    overflow-y: auto;
+
+    padding-right: 4px;
+
+}
+
+
+.site-search-result {
+
+    display: block;
+
+    padding: 16px 18px;
+
+    background: #ffffff;
+
+    border: 1px solid #e1e7ee;
+
+    border-radius: 12px;
+
+    text-decoration: none;
+
+    transition:
+        border-color .2s ease,
+        box-shadow .2s ease,
+        transform .2s ease;
+
+}
+
+
+.site-search-result:hover {
+
+    border-color: #bfd0e3;
+
+    box-shadow:
+        0 10px 24px
+        rgba(7,23,45,.07);
+
+    transform: translateY(-1px);
+
+}
+
+
+.site-search-result h3 {
+
+    margin: 0 0 5px;
+
+    color: #07172d;
+
+    font-size: 17px;
+
+    line-height: 1.35;
+
+}
+
+
+.site-search-result p {
+
+    margin: 0;
+
+    color: #62758a;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+}
+
+
+.site-search-result-link {
+
+    display: inline-block;
+
+    margin-top: 8px;
+
+    color: #1769d2;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+}
+
+
+/* ACCESSIBILITY */
+
+.sr-only {
+
+    position: absolute !important;
+
+    width: 1px !important;
+
+    height: 1px !important;
+
+    padding: 0 !important;
+
+    margin: -1px !important;
+
+    overflow: hidden !important;
+
+    clip: rect(0,0,0,0) !important;
+
+    white-space: nowrap !important;
+
+    border: 0 !important;
+
+}
+
+
+/* =========================================================
+   MOBILE SEARCH
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    /*
+       Search becomes a normal menu item.
+       This is much easier to understand on iPhone.
+    */
+
+    .header-search-toggle {
+
+        width: 100% !important;
+
+        height: auto;
+
+        min-height: 48px;
+
+        justify-content: flex-start;
+
+        gap: 10px;
+
+        padding: 14px 4px;
+
+        background: transparent;
+
+        border: 0;
+
+        border-bottom:
+            1px solid #edf0f4;
+
+        border-radius: 0;
+
+        box-shadow: none;
+
+        color: #07172d;
+
+        font-size: 15px;
+
+        font-weight: 600;
+
+    }
+
+
+    .header-search-toggle:hover {
+
+        background: transparent;
+
+        transform: none;
+
+    }
+
+
+    .header-search-toggle
+    .search-button-text {
+
+        display: inline;
+
+    }
+
+
+    /*
+       Full-screen search experience on phones
+    */
+
+    .site-search-panel {
+
+        position: fixed;
+
+        top: 0;
+
+        bottom: 0;
+
+        left: 0;
+
+        right: 0;
+
+        overflow-y: auto;
+
+        z-index: 3000;
+
+    }
+
+
+    .site-search-inner {
+
+        padding-top: 24px;
+
+        padding-bottom: 28px;
+
+    }
+
+
+    .site-search-header h2 {
+
+        font-size: 23px;
+
+    }
+
+
+    .site-search-results {
+
+        max-height: none;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .site-search-inner {
+
+        padding-left: 18px;
+
+        padding-right: 18px;
+
+    }
+
+
+    .site-search-input-wrap {
+
+        min-height: 54px;
+
+    }
+
+
+    #site-search-input {
+
+        font-size: 15px;
+
+    }
+
+}
