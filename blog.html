@@ -19,7 +19,9 @@ schema: |
           "@id": "https://searchtoleads.com/#organization"
         },
         "author": {
-          "@id": "https://searchtoleads.com/#person"
+          "@type": "Person",
+          "name": "Chris Dona",
+          "url": "https://searchtoleads.com/#about"
         }
       },
       {
@@ -44,18 +46,19 @@ schema: |
 ---
 
 <style>
-  .blog-hero {
-    padding: 82px 0 68px;
+  .blog-page .blog-hero {
+    padding: 78px 0 68px;
     background:
-      radial-gradient(circle at 90% 10%, rgba(24,184,218,.14), transparent 28%),
-      linear-gradient(135deg, #fbfdff, #edf6ff 62%, #fbfaff);
+      radial-gradient(circle at 88% 12%, rgba(24,184,218,.15), transparent 27%),
+      radial-gradient(circle at 5% 90%, rgba(117,94,216,.06), transparent 28%),
+      linear-gradient(135deg, #fbfdff, #edf6ff 60%, #fbfaff);
   }
 
-  .blog-hero-inner {
-    max-width: 900px;
+  .blog-page .blog-hero-inner {
+    max-width: 880px;
   }
 
-  .blog-hero h1 {
+  .blog-page .blog-hero h1 {
     margin: 10px 0 20px;
     color: var(--navy);
     font-size: clamp(42px, 5vw, 64px);
@@ -63,36 +66,43 @@ schema: |
     letter-spacing: -2px;
   }
 
-  .blog-hero p {
+  .blog-page .blog-hero p {
     max-width: 780px;
-    color: var(--muted);
+    margin: 0;
+    color: #57677c;
     font-size: 18px;
     line-height: 1.75;
   }
 
-  .blog-listing {
-    padding: 82px 0;
+  .blog-page .blog-listing {
+    padding: 78px 0;
   }
 
-  .blog-grid {
+  .blog-page .blog-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 24px;
+    gap: 26px;
     margin-top: 34px;
   }
 
-  .blog-card {
+  .blog-page .blog-card {
     display: flex;
     flex-direction: column;
     min-width: 0;
     overflow: hidden;
-    background: #fff;
+    background: #ffffff;
     border: 1px solid var(--border);
-    border-radius: 16px;
-    box-shadow: 0 14px 36px rgba(8,36,75,.07);
+    border-radius: 18px;
+    box-shadow: 0 14px 38px rgba(8,36,75,.07);
+    transition: transform .2s ease, box-shadow .2s ease;
   }
 
-  .blog-card-image {
+  .blog-page .blog-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 18px 44px rgba(8,36,75,.11);
+  }
+
+  .blog-page .blog-card-image {
     width: 100%;
     aspect-ratio: 16 / 9;
     object-fit: cover;
@@ -100,97 +110,115 @@ schema: |
     background: #eaf3ff;
   }
 
-  .blog-card-body {
+  .blog-page .blog-card-body {
     display: flex;
     flex-direction: column;
     flex: 1;
     padding: 24px;
   }
 
-  .blog-card-category {
+  .blog-page .blog-card-category {
     margin-bottom: 10px;
     color: var(--blue);
     font-size: 11px;
     font-weight: 850;
     text-transform: uppercase;
-    letter-spacing: .7px;
+    letter-spacing: .75px;
   }
 
-  .blog-card h2 {
+  .blog-page .blog-card h2 {
     margin: 0 0 12px;
     color: var(--navy);
     font-size: 22px;
-    line-height: 1.3;
+    line-height: 1.32;
   }
 
-  .blog-card p {
+  .blog-page .blog-card h2 a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .blog-page .blog-card p {
     margin: 0 0 18px;
-    color: var(--muted);
+    color: #607086;
     font-size: 14px;
-    line-height: 1.65;
+    line-height: 1.68;
   }
 
-  .blog-card-meta {
+  .blog-page .blog-card-meta {
     margin-top: auto;
     margin-bottom: 14px;
-    color: #7b8ca1;
+    color: #7d8da1;
     font-size: 12px;
   }
 
-  .blog-empty-note {
+  .blog-page .blog-card .insight-link {
+    display: inline-block;
+    font-weight: 800;
+  }
+
+  .blog-page .coming-soon {
     margin-top: 34px;
-    padding: 24px;
+    padding: 22px 24px;
     border: 1px dashed #b8c8da;
     border-radius: 14px;
     background: #f8fbff;
-    color: var(--muted);
+    color: #607086;
+    line-height: 1.65;
   }
 
-  .blog-author {
-    padding: 72px 0;
+  .blog-page .blog-author {
+    padding: 70px 0;
     background: #f7faff;
   }
 
-  .blog-author-grid {
+  .blog-page .blog-author-grid {
     display: grid;
     grid-template-columns: 120px minmax(0, 1fr);
-    gap: 24px;
+    gap: 26px;
     align-items: center;
   }
 
-  .blog-author img {
+  .blog-page .blog-author img {
     width: 120px;
     height: 120px;
+    display: block;
     object-fit: cover;
     border-radius: 50%;
   }
 
-  .blog-author h2 {
+  .blog-page .blog-author h2 {
     margin: 5px 0 10px;
     color: var(--navy);
   }
 
-  .blog-author p {
+  .blog-page .blog-author p {
     max-width: 780px;
-    color: var(--muted);
+    margin: 0 0 14px;
+    color: #607086;
+    line-height: 1.7;
   }
 
   @media (max-width: 1000px) {
-    .blog-grid {
+    .blog-page .blog-grid {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
 
   @media (max-width: 700px) {
-    .blog-grid {
+    .blog-page .blog-hero {
+      padding: 58px 0 50px;
+    }
+
+    .blog-page .blog-grid {
       grid-template-columns: 1fr;
     }
 
-    .blog-author-grid {
+    .blog-page .blog-author-grid {
       grid-template-columns: 1fr;
     }
 
-    .blog-author img {
+    .blog-page .blog-author img {
       width: 100px;
       height: 100px;
     }
@@ -204,6 +232,7 @@ BLOG HERO
 
 <section class="blog-hero">
   <div class="container">
+
     <div class="blog-hero-inner">
 
       <div class="section-kicker">
@@ -221,13 +250,19 @@ BLOG HERO
       </p>
 
     </div>
+
   </div>
 </section>
 
 
 <!-- =====================================================
 BLOG LISTING
-Each card below links to a separate article inside /blogs/
+
+For every new article:
+1. Create the full article inside /blogs/
+2. Upload its image inside /images/blogs/
+3. Copy one complete blog-card block below
+4. Change image, category, title, summary and link
 ===================================================== -->
 
 <section class="blog-listing" id="blogs">
@@ -242,87 +277,49 @@ Each card below links to a separate article inside /blogs/
     </h2>
 
     <p class="section-intro">
-      Browse short previews below and open the full article for detailed guidance.
+      Browse short previews below and open each article for more detailed guidance.
     </p>
 
 
     <div class="blog-grid">
 
-<!-- =================================================
-BLOG CARD 1
-
-Image file:
-/images/blogs/seo-aeo-geo-dubai.jpg
-
-Full article:
-/blogs/seo-aeo-geo-dubai.html
-================================================== -->
-
-<article class="blog-card">
-
-  <img
-    src="/images/blogs/seo-aeo-geo-dubai.jpg"
-    alt="SEO AEO and GEO services in Dubai"
-    class="blog-card-image"
-    loading="lazy">
-
-  <div class="blog-card-body">
-
-    <div class="blog-card-category">
-      SEO + AEO + GEO
-    </div>
-
-    <h2>
-      SEO, AEO and GEO in Dubai: What Businesses Need to Know
-    </h2>
-
-    <p>
-      Understand how SEO, Answer Engine Optimization and Generative Engine
-      Optimization work together, and what Dubai businesses should prioritise
-      to improve visibility across Google and AI-driven search.
-    </p>
-
-    <div class="blog-card-meta">
-      By Chris Dona
-    </div>
-
-    <a
-      href="/blogs/seo-aeo-geo-dubai.html"
-      class="insight-link">
-      Read Article →
-    </a>
-
 
       <!-- =================================================
-      BLOG CARD 2
-      Image file:
-      /images/blogs/google-ads-lead-quality-dubai.jpg
+      BLOG CARD 1
+
+      Image:
+      /images/blogs/seo-aeo-geo-dubai.jpg
 
       Full article:
-      /blogs/google-ads-lead-quality-dubai.html
+      /blogs/seo-aeo-geo-dubai.html
       ================================================== -->
 
       <article class="blog-card">
 
-        <img
-          src="/images/blogs/google-ads-lead-quality-dubai.jpg"
-          alt="Google Ads lead quality in Dubai"
-          class="blog-card-image"
-          loading="lazy">
+        <a href="/blogs/seo-aeo-geo-dubai.html">
+          <img
+            src="/images/blogs/seo-aeo-geo-dubai.jpg"
+            alt="SEO AEO and GEO in Dubai"
+            class="blog-card-image"
+            loading="lazy">
+        </a>
 
         <div class="blog-card-body">
 
           <div class="blog-card-category">
-            PERFORMANCE MARKETING
+            SEO + AEO + GEO
           </div>
 
           <h2>
-            How to Improve Google Ads Lead Quality in Dubai
+            <a href="/blogs/seo-aeo-geo-dubai.html">
+              SEO, AEO and GEO in Dubai: What Businesses Need to Know
+            </a>
           </h2>
 
           <p>
-            More leads do not always mean better marketing. Learn where poor-quality
-            enquiries come from and what to review before increasing advertising spend.
+            Understand how SEO, Answer Engine Optimization and Generative Engine
+            Optimization work together, and what Dubai businesses should prioritise
+            to improve visibility across Google and AI-driven search.
           </p>
 
           <div class="blog-card-meta">
@@ -330,73 +327,29 @@ Full article:
           </div>
 
           <a
-            href="/blogs/google-ads-lead-quality-dubai.html"
+            href="/blogs/seo-aeo-geo-dubai.html"
             class="insight-link">
             Read Article →
           </a>
 
         </div>
+
       </article>
 
 
       <!-- =================================================
-      BLOG CARD 3
-      Image file:
-      /images/blogs/social-media-awareness-campaigns-uae.jpg
-
-      Full article:
-      /blogs/social-media-awareness-campaigns-uae.html
+      COPY BLOG CARD 1 AND PASTE NEW BLOG CARDS HERE
       ================================================== -->
 
-      <article class="blog-card">
 
-        <img
-          src="/images/blogs/social-media-awareness-campaigns-uae.jpg"
-          alt="Social media brand awareness campaigns in the UAE"
-          class="blog-card-image"
-          loading="lazy">
-
-        <div class="blog-card-body">
-
-          <div class="blog-card-category">
-            BRAND + SOCIAL MEDIA
-          </div>
-
-          <h2>
-            How to Plan a Brand Awareness Campaign on Social Media
-          </h2>
-
-          <p>
-            A practical framework for defining the audience, message, platforms,
-            creative direction and KPIs behind a useful awareness campaign.
-          </p>
-
-          <div class="blog-card-meta">
-            By Chris Dona
-          </div>
-
-          <a
-            href="/blogs/social-media-awareness-campaigns-uae.html"
-            class="insight-link">
-            Read Article →
-          </a>
-
-        </div>
-      </article>
+    </div>
 
 
-      <!-- =================================================
-      ADD FUTURE BLOG CARDS HERE
-
-      Copy one complete <article class="blog-card">...</article>
-      block and change:
-      1. Image URL
-      2. Category
-      3. Title
-      4. Short description
-      5. Article URL
-      ================================================== -->
-
+    <div class="coming-soon">
+      <strong>More articles coming soon.</strong>
+      Future topics will cover paid media, lead generation, brand awareness,
+      social media marketing, e-commerce, websites, conversion optimisation
+      and practical marketing strategy for UAE businesses.
     </div>
 
   </div>
@@ -404,7 +357,7 @@ Full article:
 
 
 <!-- =====================================================
-AUTHOR
+ABOUT THE AUTHOR
 ===================================================== -->
 
 <section class="blog-author">
