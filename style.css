@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap");
+
 /* =========================================================
 SEARCHTOLEADS
 SHARED WEBSITE STYLES
@@ -2891,9 +2893,9 @@ BLOG ARTICLE - SEO AEO GEO DUBAI
     --article-brass-soft: #E7D9B8;
     --article-teal: #1F6F63;
     --article-teal-soft: #DCEAE6;
-    --article-font-display: Georgia, "Times New Roman", serif;
-    --article-font-body: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    --article-font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    --article-font-display: 'Fraunces', serif;
+    --article-font-body: 'Inter', sans-serif;
+    --article-font-mono: 'IBM Plex Mono', monospace;
 }
 
 .blog-article-page img,
