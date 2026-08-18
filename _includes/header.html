@@ -2,7 +2,9 @@
 
 <header>
 
+  <!-- TOP CONTACT BAR -->
   <div class="top-contact-bar">
+
     <div class="container top-contact-inner">
 
       <a href="tel:+971559361059">
@@ -18,17 +20,25 @@
       </a>
 
     </div>
+
   </div>
 
 
+  <!-- MAIN HEADER -->
   <div class="container nav-wrap">
 
-    <a href="/" class="logo">
+    <!-- LOGO -->
+    <a
+      href="/"
+      class="logo"
+      aria-label="SearchToLeads homepage">
+
       Search<span>ToLeads</span>
+
     </a>
 
 
-    <!-- MOBILE MENU BUTTON -->
+    <!-- MOBILE HAMBURGER -->
     <button
       type="button"
       class="mobile-menu-toggle"
@@ -43,19 +53,23 @@
     </button>
 
 
-    <!-- MAIN NAVIGATION -->
+    <!-- PRIMARY NAVIGATION -->
     <nav
       id="primary-nav"
       class="primary-nav"
       aria-label="Primary navigation">
 
 
+      <!-- SERVICES -->
       <div class="nav-dropdown">
 
         <button
           type="button"
-          class="services-toggle">
+          class="services-toggle"
+          aria-expanded="false">
+
           Services
+
         </button>
 
 
@@ -66,11 +80,11 @@
           </a>
 
           <a href="/seo-aeo-geo-services-dubai.html">
-            SEO, AEO & GEO
+            SEO, AEO &amp; GEO
           </a>
 
           <a href="/digital-marketing-services-smes-startups-dubai.html">
-            SME & Startup Digital Marketing
+            SME &amp; Startup Digital Marketing
           </a>
 
           <a href="/performance-marketing-consultant-dubai.html">
@@ -78,7 +92,7 @@
           </a>
 
           <a href="/brand-awareness-social-media-marketing-dubai.html">
-            Brand Awareness & Social Media Marketing
+            Brand Awareness &amp; Social Media Marketing
           </a>
 
           <a href="/ecommerce-marketing-services-dubai.html">
@@ -98,6 +112,7 @@
       </div>
 
 
+      <!-- MAIN LINKS -->
       <a href="/#industries">
         Industries
       </a>
@@ -118,13 +133,166 @@
         Blog
       </a>
 
+
+      <!-- SEARCH BUTTON -->
+      <button
+        type="button"
+        class="header-search-toggle"
+        aria-label="Search SearchToLeads"
+        aria-expanded="false"
+        aria-controls="site-search-panel">
+
+        <svg
+          viewBox="0 0 24 24"
+          width="20"
+          height="20"
+          aria-hidden="true">
+
+          <circle
+            cx="11"
+            cy="11"
+            r="7"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2">
+          </circle>
+
+          <line
+            x1="16.5"
+            y1="16.5"
+            x2="21"
+            y2="21"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round">
+          </line>
+
+        </svg>
+
+        <span class="search-button-text">
+          Search
+        </span>
+
+      </button>
+
+
+      <!-- CTA -->
       <a
         href="/contact.html"
         class="nav-cta">
+
         Let's Talk
+
       </a>
 
     </nav>
+
+  </div>
+
+
+  <!-- =====================================================
+       SITE SEARCH PANEL
+       ===================================================== -->
+
+  <div
+    id="site-search-panel"
+    class="site-search-panel"
+    hidden>
+
+    <div class="container site-search-inner">
+
+      <div class="site-search-header">
+
+        <div>
+
+          <div class="site-search-label">
+            SEARCHTOLEADS
+          </div>
+
+          <h2>
+            Search the website
+          </h2>
+
+        </div>
+
+
+        <button
+          type="button"
+          class="site-search-close"
+          aria-label="Close search">
+
+          ×
+
+        </button>
+
+      </div>
+
+
+      <div class="site-search-form">
+
+        <label
+          for="site-search-input"
+          class="sr-only">
+
+          Search articles and services
+
+        </label>
+
+
+        <div class="site-search-input-wrap">
+
+          <svg
+            viewBox="0 0 24 24"
+            width="22"
+            height="22"
+            aria-hidden="true">
+
+            <circle
+              cx="11"
+              cy="11"
+              r="7"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2">
+            </circle>
+
+            <line
+              x1="16.5"
+              y1="16.5"
+              x2="21"
+              y2="21"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round">
+            </line>
+
+          </svg>
+
+
+          <input
+            type="search"
+            id="site-search-input"
+            placeholder="Search SEO, Google Ads, social media, e-commerce..."
+            autocomplete="off">
+
+        </div>
+
+      </div>
+
+
+      <div
+        id="site-search-status"
+        class="site-search-status"
+        aria-live="polite">
+      </div>
+
+
+      <div
+        id="site-search-results"
+        class="site-search-results">
+      </div>
+
+    </div>
 
   </div>
 
