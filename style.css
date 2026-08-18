@@ -3214,3 +3214,19 @@ BLOG ARTICLE - SEO AEO GEO DUBAI
     .blog-article-page article{padding:48px 0 24px 0;}
     .blog-article-page article h2{margin:44px 0 16px 0;}
   }
+
+.blog-article-page .article-featured-image {
+    margin: 34px 0 0;
+}
+
+.blog-article-page .article-featured-image img {
+    width: 100%;
+    max-height: 520px;
+
+    object-fit: cover;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 18px 46px rgba(8,36,75,.16);
+}
