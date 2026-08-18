@@ -2794,48 +2794,17 @@ RESPONSIVE
   left: auto !important;
   transform: none !important;
 }
-/* =========================================
-   FIX PHONE NUMBER FIELD WIDTH
-========================================= */
-
-.phone-row {
-  display: grid !important;
-  grid-template-columns: 130px minmax(0, 1fr) !important;
-  gap: 10px;
-  width: 100%;
-}
-
-.phone-row .country-code {
-  width: 100% !important;
-  min-width: 0;
-}
-
-.phone-row .phone-number {
-  width: 100% !important;
-  min-width: 0;
-}
 <div class="form-group">
 
   <label for="hero-phone">
     Phone / WhatsApp
   </label>
 
-  <div
-    style="
-      display: grid;
-      grid-template-columns: 105px minmax(0, 1fr);
-      gap: 10px;
-      width: 100%;
-    ">
+  <div class="hero-phone-row">
 
     <select
       class="country-code"
-      aria-label="Country code"
-      style="
-        width: 105px;
-        min-width: 105px;
-        box-sizing: border-box;
-      ">
+      aria-label="Country code">
 
       <option value="+971" selected>🇦🇪 +971</option>
       <option value="+91">🇮🇳 +91</option>
@@ -2860,15 +2829,8 @@ RESPONSIVE
       name="Phone"
       autocomplete="tel"
       inputmode="tel"
-      placeholder="50 123 4567"
-      style="
-        width: 100%;
-        min-width: 0;
-        box-sizing: border-box;
-      ">
+      placeholder="50 123 4567">
 
   </div>
 
 </div>
-
-
