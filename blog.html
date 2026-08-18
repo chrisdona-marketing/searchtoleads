@@ -1,0 +1,455 @@
+---
+layout: default
+title: "Digital Marketing Blog Dubai | SearchToLeads"
+description: "Practical digital marketing articles for UAE businesses covering SEO, AEO, GEO, paid media, social media, e-commerce, websites, analytics and lead generation."
+canonical: "https://searchtoleads.com/blog.html"
+body_class: "blog-page"
+
+schema: |
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Blog",
+        "@id": "https://searchtoleads.com/blog.html#blog",
+        "url": "https://searchtoleads.com/blog.html",
+        "name": "SearchToLeads Digital Marketing Blog",
+        "description": "Practical digital marketing articles for UAE businesses covering SEO, AEO, GEO, paid media, social media, e-commerce, websites, analytics and lead generation.",
+        "publisher": {
+          "@id": "https://searchtoleads.com/#organization"
+        },
+        "author": {
+          "@id": "https://searchtoleads.com/#person"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://searchtoleads.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "https://searchtoleads.com/blog.html"
+          }
+        ]
+      }
+    ]
+  }
+---
+
+<style>
+  .blog-hero {
+    padding: 82px 0 68px;
+    background:
+      radial-gradient(circle at 90% 10%, rgba(24,184,218,.14), transparent 28%),
+      linear-gradient(135deg, #fbfdff, #edf6ff 62%, #fbfaff);
+  }
+
+  .blog-hero-inner {
+    max-width: 900px;
+  }
+
+  .blog-hero h1 {
+    margin: 10px 0 20px;
+    color: var(--navy);
+    font-size: clamp(42px, 5vw, 64px);
+    line-height: 1.08;
+    letter-spacing: -2px;
+  }
+
+  .blog-hero p {
+    max-width: 780px;
+    color: var(--muted);
+    font-size: 18px;
+    line-height: 1.75;
+  }
+
+  .blog-listing {
+    padding: 82px 0;
+  }
+
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    margin-top: 34px;
+  }
+
+  .blog-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    box-shadow: 0 14px 36px rgba(8,36,75,.07);
+  }
+
+  .blog-card-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    display: block;
+    background: #eaf3ff;
+  }
+
+  .blog-card-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 24px;
+  }
+
+  .blog-card-category {
+    margin-bottom: 10px;
+    color: var(--blue);
+    font-size: 11px;
+    font-weight: 850;
+    text-transform: uppercase;
+    letter-spacing: .7px;
+  }
+
+  .blog-card h2 {
+    margin: 0 0 12px;
+    color: var(--navy);
+    font-size: 22px;
+    line-height: 1.3;
+  }
+
+  .blog-card p {
+    margin: 0 0 18px;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  .blog-card-meta {
+    margin-top: auto;
+    margin-bottom: 14px;
+    color: #7b8ca1;
+    font-size: 12px;
+  }
+
+  .blog-empty-note {
+    margin-top: 34px;
+    padding: 24px;
+    border: 1px dashed #b8c8da;
+    border-radius: 14px;
+    background: #f8fbff;
+    color: var(--muted);
+  }
+
+  .blog-author {
+    padding: 72px 0;
+    background: #f7faff;
+  }
+
+  .blog-author-grid {
+    display: grid;
+    grid-template-columns: 120px minmax(0, 1fr);
+    gap: 24px;
+    align-items: center;
+  }
+
+  .blog-author img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .blog-author h2 {
+    margin: 5px 0 10px;
+    color: var(--navy);
+  }
+
+  .blog-author p {
+    max-width: 780px;
+    color: var(--muted);
+  }
+
+  @media (max-width: 1000px) {
+    .blog-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 700px) {
+    .blog-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .blog-author-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .blog-author img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+</style>
+
+
+<!-- =====================================================
+BLOG HERO
+===================================================== -->
+
+<section class="blog-hero">
+  <div class="container">
+    <div class="blog-hero-inner">
+
+      <div class="section-kicker">
+        SEARCHTOLEADS BLOG
+      </div>
+
+      <h1>
+        Digital Marketing Blog for UAE Businesses
+      </h1>
+
+      <p>
+        Practical articles on SEO, AEO, GEO, paid media, social media,
+        e-commerce, websites, analytics and lead generation for businesses
+        in Dubai and across the UAE.
+      </p>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- =====================================================
+BLOG LISTING
+Each card below links to a separate article inside /blogs/
+===================================================== -->
+
+<section class="blog-listing" id="blogs">
+  <div class="container">
+
+    <div class="section-kicker">
+      LATEST ARTICLES
+    </div>
+
+    <h2 class="section-title">
+      Practical Marketing Guides & Ideas
+    </h2>
+
+    <p class="section-intro">
+      Browse short previews below and open the full article for detailed guidance.
+    </p>
+
+
+    <div class="blog-grid">
+
+      <!-- =================================================
+      BLOG CARD 1
+      Image file to upload later:
+      /images/blogs/seo-aeo-geo-uae.jpg
+
+      Full article:
+      /blogs/seo-aeo-geo-uae.html
+      ================================================== -->
+
+      <article class="blog-card">
+
+        <img
+          src="/images/blogs/seo-aeo-geo-uae.jpg"
+          alt="SEO AEO and GEO for UAE businesses"
+          class="blog-card-image"
+          loading="lazy">
+
+        <div class="blog-card-body">
+
+          <div class="blog-card-category">
+            SEO + AI SEARCH
+          </div>
+
+          <h2>
+            SEO, AEO and GEO: What UAE Businesses Need to Know
+          </h2>
+
+          <p>
+            Understand how traditional SEO, answer engines and AI-driven search
+            work together, and what businesses should prioritise to improve
+            discoverability.
+          </p>
+
+          <div class="blog-card-meta">
+            By Chris Dona
+          </div>
+
+          <a
+            href="/blogs/seo-aeo-geo-uae.html"
+            class="insight-link">
+            Read Article →
+          </a>
+
+        </div>
+      </article>
+
+
+      <!-- =================================================
+      BLOG CARD 2
+      Image file:
+      /images/blogs/google-ads-lead-quality-dubai.jpg
+
+      Full article:
+      /blogs/google-ads-lead-quality-dubai.html
+      ================================================== -->
+
+      <article class="blog-card">
+
+        <img
+          src="/images/blogs/google-ads-lead-quality-dubai.jpg"
+          alt="Google Ads lead quality in Dubai"
+          class="blog-card-image"
+          loading="lazy">
+
+        <div class="blog-card-body">
+
+          <div class="blog-card-category">
+            PERFORMANCE MARKETING
+          </div>
+
+          <h2>
+            How to Improve Google Ads Lead Quality in Dubai
+          </h2>
+
+          <p>
+            More leads do not always mean better marketing. Learn where poor-quality
+            enquiries come from and what to review before increasing advertising spend.
+          </p>
+
+          <div class="blog-card-meta">
+            By Chris Dona
+          </div>
+
+          <a
+            href="/blogs/google-ads-lead-quality-dubai.html"
+            class="insight-link">
+            Read Article →
+          </a>
+
+        </div>
+      </article>
+
+
+      <!-- =================================================
+      BLOG CARD 3
+      Image file:
+      /images/blogs/social-media-awareness-campaigns-uae.jpg
+
+      Full article:
+      /blogs/social-media-awareness-campaigns-uae.html
+      ================================================== -->
+
+      <article class="blog-card">
+
+        <img
+          src="/images/blogs/social-media-awareness-campaigns-uae.jpg"
+          alt="Social media brand awareness campaigns in the UAE"
+          class="blog-card-image"
+          loading="lazy">
+
+        <div class="blog-card-body">
+
+          <div class="blog-card-category">
+            BRAND + SOCIAL MEDIA
+          </div>
+
+          <h2>
+            How to Plan a Brand Awareness Campaign on Social Media
+          </h2>
+
+          <p>
+            A practical framework for defining the audience, message, platforms,
+            creative direction and KPIs behind a useful awareness campaign.
+          </p>
+
+          <div class="blog-card-meta">
+            By Chris Dona
+          </div>
+
+          <a
+            href="/blogs/social-media-awareness-campaigns-uae.html"
+            class="insight-link">
+            Read Article →
+          </a>
+
+        </div>
+      </article>
+
+
+      <!-- =================================================
+      ADD FUTURE BLOG CARDS HERE
+
+      Copy one complete <article class="blog-card">...</article>
+      block and change:
+      1. Image URL
+      2. Category
+      3. Title
+      4. Short description
+      5. Article URL
+      ================================================== -->
+
+    </div>
+
+
+    <div class="blog-empty-note">
+      <strong>Adding a new blog later is simple:</strong>
+      create the full article inside the <code>/blogs/</code> folder,
+      upload its image, then copy one card above and change the title,
+      short description, image and link.
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =====================================================
+AUTHOR
+===================================================== -->
+
+<section class="blog-author">
+  <div class="container">
+
+    <div class="blog-author-grid">
+
+      <img
+        src="/chris-dona-headshot.jpg"
+        alt="Chris Dona, digital marketing consultant in Dubai"
+        loading="lazy">
+
+      <div>
+
+        <div class="section-kicker">
+          ABOUT THE AUTHOR
+        </div>
+
+        <h2>
+          Chris Dona
+        </h2>
+
+        <p>
+          Digital marketing consultant in Dubai with 10+ years of UAE marketing
+          experience across strategy, SEO, AEO, GEO, paid media, social media,
+          e-commerce, websites, analytics and lead generation.
+        </p>
+
+        <a href="/contact.html" class="insight-link">
+          Discuss Your Marketing →
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
