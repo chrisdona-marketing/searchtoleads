@@ -354,11 +354,206 @@
   display:block;
   border-radius:6px;
 }
-/* Fix blog hero heading colour */
+
+/* ==========================================================
+   COMMON STYLES FOR SEARCHTOLEADS BLOG ARTICLES
+   Supports the shared blog-post layout and future articles.
+   ========================================================== */
+
 .blog-article-content .hero h1 {
-    color: #F3F5F3 !important;
+  color:#F3F5F3 !important;
 }
 
 .blog-article-content .hero h1 em {
-    color: #E7D9B8 !important;
+  color:#E7D9B8 !important;
 }
+
+.blog-article-content .container {
+  width:100%;
+  max-width:960px;
+  margin:0 auto;
+  padding-left:24px;
+  padding-right:24px;
+}
+
+.blog-article-content .hero-inner {
+  max-width:960px;
+}
+
+.blog-article-content .hero-copy {
+  font-size:19px;
+  color:#C7CDD6;
+  max-width:62ch;
+  margin:0 0 34px;
+}
+
+.blog-article-content .section-kicker {
+  font-family:var(--font-mono);
+  font-size:12px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--brass-soft);
+  margin-bottom:8px;
+}
+
+.blog-article-content .section-title {
+  font-family:var(--font-display);
+  font-weight:600;
+  font-size:clamp(26px,3.4vw,34px);
+  line-height:1.15;
+  color:#F3F5F3;
+  margin:0 0 10px;
+}
+
+.blog-article-content .section-intro {
+  color:#AEB6C4;
+  margin:0 0 24px;
+  font-size:15px;
+}
+
+.blog-article-content .article-wrap {
+  max-width:840px;
+  padding-top:72px;
+  padding-bottom:40px;
+}
+
+.blog-article-content .article-wrap h2 {
+  font-family:var(--font-display);
+  font-weight:600;
+  font-size:clamp(26px,3.4vw,34px);
+  margin:64px 0 20px;
+  letter-spacing:-0.01em;
+  color:var(--ink);
+}
+
+.blog-article-content .article-wrap h2:first-of-type {
+  margin-top:0;
+}
+
+.blog-article-content .article-wrap h3 {
+  font-family:var(--font-display);
+  font-weight:600;
+  font-size:21px;
+  margin:34px 0 14px;
+  color:var(--ink-soft);
+}
+
+.blog-article-content .article-wrap p {
+  font-size:17px;
+  color:#333D4D;
+  margin:0 0 20px;
+}
+
+.blog-article-content .article-wrap ul,
+.blog-article-content .article-wrap ol {
+  font-size:17px;
+  color:#333D4D;
+  padding-left:22px;
+  margin:0 0 20px;
+}
+
+.blog-article-content .article-wrap li {
+  margin-bottom:8px;
+}
+
+.blog-article-content .article-wrap strong {
+  color:var(--ink);
+}
+
+.blog-article-content .article-wrap .lede {
+  font-size:21px;
+  font-family:var(--font-display);
+  font-weight:400;
+  color:var(--ink-soft);
+  line-height:1.5;
+  margin-bottom:12px;
+}
+
+.blog-article-content .callout-teal {
+  background:var(--teal-soft);
+  border-left-color:var(--teal);
+}
+
+.blog-article-content .callout-teal p {
+  color:#0F3E36;
+}
+
+.blog-article-content .faq-wrap {
+  padding:0;
+}
+
+.blog-article-content .faq-wrap .faq-item {
+  border-bottom:1px solid var(--line);
+}
+
+.blog-article-content .faq-wrap .faq-item:first-child {
+  border-top:1px solid var(--line);
+}
+
+.blog-article-content .faq-wrap .faq-item summary {
+  cursor:pointer;
+  padding:20px 4px;
+  font-family:var(--font-display);
+  font-size:18px;
+  font-weight:600;
+  color:var(--ink);
+  list-style:none;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:16px;
+}
+
+.blog-article-content .faq-wrap .faq-item summary::-webkit-details-marker {
+  display:none;
+}
+
+.blog-article-content .faq-wrap .faq-item summary::after {
+  content:"+";
+  font-family:var(--font-body);
+  font-size:22px;
+  font-weight:400;
+  color:var(--brass);
+  flex-shrink:0;
+  transition:transform .2s ease;
+}
+
+.blog-article-content .faq-wrap .faq-item[open] summary::after {
+  transform:rotate(45deg);
+}
+
+.blog-article-content .faq-wrap .faq-item p {
+  padding:0 4px 22px;
+  font-size:16px;
+  color:#4A5364;
+  margin:0;
+}
+
+.blog-article-content .blog-featured-image-section {
+  background:var(--paper);
+}
+
+.blog-article-content .article-featured-image {
+  margin:40px 0 0;
+}
+
+.blog-article-content .article-featured-image img {
+  width:100%;
+  height:auto;
+  max-height:520px;
+  object-fit:cover;
+  display:block;
+  border-radius:6px;
+}
+
+@media (max-width:640px) {
+  .blog-article-content .article-wrap {
+    padding-top:48px;
+    padding-bottom:24px;
+  }
+
+  .blog-article-content .article-wrap h2 {
+    margin:44px 0 16px;
+  }
+}
+
