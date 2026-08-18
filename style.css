@@ -2814,9 +2814,7 @@ RESPONSIVE
   width: 100% !important;
   min-width: 0;
 }
-<div
-  class="form-group"
-  style="grid-column: 1 / -1;">
+<div class="form-group">
 
   <label for="hero-phone">
     Phone / WhatsApp
@@ -2824,8 +2822,8 @@ RESPONSIVE
 
   <div
     style="
-      display: flex;
-      align-items: stretch;
+      display: grid;
+      grid-template-columns: 105px minmax(0, 1fr);
       gap: 10px;
       width: 100%;
     ">
@@ -2834,9 +2832,8 @@ RESPONSIVE
       class="country-code"
       aria-label="Country code"
       style="
-        flex: 0 0 115px;
-        width: 115px;
-        min-width: 115px;
+        width: 105px;
+        min-width: 105px;
         box-sizing: border-box;
       ">
 
@@ -2865,7 +2862,6 @@ RESPONSIVE
       inputmode="tel"
       placeholder="50 123 4567"
       style="
-        flex: 1 1 auto;
         width: 100%;
         min-width: 0;
         box-sizing: border-box;
@@ -2874,3 +2870,5 @@ RESPONSIVE
   </div>
 
 </div>
+
+
