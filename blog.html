@@ -223,6 +223,92 @@ schema: |
       height: 100px;
     }
   }
+
+
+  /* =====================================================
+     BLOG PAGINATION
+     ===================================================== */
+
+  .blog-page .blog-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 38px;
+  }
+
+  .blog-page .blog-pagination[hidden] {
+    display: none !important;
+  }
+
+  .blog-page .blog-pagination button {
+    min-width: 42px;
+    height: 42px;
+    padding: 0 13px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: #ffffff;
+    color: var(--navy);
+    font: inherit;
+    font-size: 14px;
+    font-weight: 750;
+    line-height: 1;
+    cursor: pointer;
+    transition:
+      background .2s ease,
+      color .2s ease,
+      border-color .2s ease,
+      transform .2s ease,
+      box-shadow .2s ease;
+  }
+
+  .blog-page .blog-pagination button:hover:not(:disabled) {
+    transform: translateY(-1px);
+    border-color: #b9c9da;
+    box-shadow: 0 8px 20px rgba(8,36,75,.07);
+  }
+
+  .blog-page .blog-pagination button.is-active {
+    background: var(--navy);
+    color: #ffffff;
+    border-color: var(--navy);
+  }
+
+  .blog-page .blog-pagination button:disabled {
+    opacity: .4;
+    cursor: not-allowed;
+  }
+
+  .blog-page .blog-pagination .pagination-prev,
+  .blog-page .blog-pagination .pagination-next {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  @media (max-width: 700px) {
+    .blog-page .blog-pagination {
+      gap: 6px;
+      margin-top: 30px;
+    }
+
+    .blog-page .blog-pagination button {
+      min-width: 38px;
+      height: 38px;
+      padding: 0 10px;
+      font-size: 13px;
+    }
+
+    .blog-page .blog-pagination .pagination-prev,
+    .blog-page .blog-pagination .pagination-next {
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+  }
+
 </style>
 
 
@@ -465,8 +551,41 @@ For every new article:
       COPY BLOG CARD 1 AND PASTE NEW BLOG CARDS HERE
       ================================================== -->
 
-
     </div>
+
+    <!-- =====================================================
+    BLOG PAGINATION
+    Shows automatically when there are more than 6 articles
+    ===================================================== -->
+
+    <nav
+      class="blog-pagination"
+      id="blog-pagination"
+      aria-label="Blog pagination"
+      hidden>
+
+      <button
+        type="button"
+        class="pagination-prev"
+        id="blog-pagination-prev"
+        aria-label="Previous page">
+        Previous
+      </button>
+
+      <div
+        id="blog-pagination-pages"
+        style="display:contents;">
+      </div>
+
+      <button
+        type="button"
+        class="pagination-next"
+        id="blog-pagination-next"
+        aria-label="Next page">
+        Next
+      </button>
+
+    </nav>
 
 
     <div class="coming-soon">
@@ -520,3 +639,226 @@ ABOUT THE AUTHOR
 
   </div>
 </section>
+
+<!-- =====================================================
+BLOG PAGINATION SCRIPT
+6 articles per page
+===================================================== -->
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const blogGrid =
+    document.querySelector(".blog-page .blog-grid");
+
+  const pagination =
+    document.getElementById("blog-pagination");
+
+  const pagesWrap =
+    document.getElementById("blog-pagination-pages");
+
+  const prevButton =
+    document.getElementById("blog-pagination-prev");
+
+  const nextButton =
+    document.getElementById("blog-pagination-next");
+
+  if (
+    !blogGrid ||
+    !pagination ||
+    !pagesWrap ||
+    !prevButton ||
+    !nextButton
+  ) {
+    return;
+  }
+
+  const cards =
+    Array.from(
+      blogGrid.querySelectorAll(".blog-card")
+    );
+
+  const itemsPerPage = 6;
+
+  const totalPages =
+    Math.ceil(cards.length / itemsPerPage);
+
+  let currentPage = 1;
+
+
+  function renderPage(pageNumber) {
+
+    currentPage = pageNumber;
+
+    const start =
+      (currentPage - 1) * itemsPerPage;
+
+    const end =
+      start + itemsPerPage;
+
+
+    cards.forEach(function (card, index) {
+
+      card.style.display =
+        index >= start && index < end
+          ? ""
+          : "none";
+
+    });
+
+
+    prevButton.disabled =
+      currentPage === 1;
+
+    nextButton.disabled =
+      currentPage === totalPages;
+
+
+    pagesWrap
+      .querySelectorAll("button")
+      .forEach(function (button) {
+
+        const buttonPage =
+          Number(button.dataset.page);
+
+        const isActive =
+          buttonPage === currentPage;
+
+        button.classList.toggle(
+          "is-active",
+          isActive
+        );
+
+        if (isActive) {
+          button.setAttribute(
+            "aria-current",
+            "page"
+          );
+        } else {
+          button.removeAttribute(
+            "aria-current"
+          );
+        }
+
+      });
+
+  }
+
+
+  function buildPagination() {
+
+    pagesWrap.innerHTML = "";
+
+
+    if (totalPages <= 1) {
+
+      pagination.hidden = true;
+
+      renderPage(1);
+
+      return;
+
+    }
+
+
+    pagination.hidden = false;
+
+
+    for (
+      let page = 1;
+      page <= totalPages;
+      page++
+    ) {
+
+      const button =
+        document.createElement("button");
+
+      button.type = "button";
+
+      button.textContent = page;
+
+      button.dataset.page = page;
+
+      button.setAttribute(
+        "aria-label",
+        "Go to blog page " + page
+      );
+
+
+      button.addEventListener(
+        "click",
+        function () {
+
+          renderPage(page);
+
+          document
+            .getElementById("blogs")
+            .scrollIntoView({
+              behavior: "smooth",
+              block: "start"
+            });
+
+        }
+      );
+
+
+      pagesWrap.appendChild(button);
+
+    }
+
+
+    renderPage(1);
+
+  }
+
+
+  prevButton.addEventListener(
+    "click",
+    function () {
+
+      if (currentPage > 1) {
+
+        renderPage(
+          currentPage - 1
+        );
+
+        document
+          .getElementById("blogs")
+          .scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+          });
+
+      }
+
+    }
+  );
+
+
+  nextButton.addEventListener(
+    "click",
+    function () {
+
+      if (currentPage < totalPages) {
+
+        renderPage(
+          currentPage + 1
+        );
+
+        document
+          .getElementById("blogs")
+          .scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+          });
+
+      }
+
+    }
+  );
+
+
+  buildPagination();
+
+});
+</script>
