@@ -340,11 +340,18 @@
     .blog-article-content article{padding:48px 0 24px 0;}
     .blog-article-content article h2{margin:44px 0 16px 0;}
   }
-/* Fix blog hero heading colour */
-.blog-article-content .hero h1 {
-    color: #F3F5F3 !important;
+
+/* ===== FEATURED BLOG IMAGE ===== */
+.blog-article-content .article-featured-image{
+  margin:40px 0 0;
 }
 
-.blog-article-content .hero h1 em {
-    color: #E7D9B8 !important;
+.blog-article-content .article-featured-image img{
+  width:100%;
+  height:auto;
+  max-height:520px;
+  object-fit:cover;
+  display:block;
+  border-radius:6px;
 }
+
