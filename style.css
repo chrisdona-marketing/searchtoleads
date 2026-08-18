@@ -3474,3 +3474,54 @@ BLOG ARTICLE - SEO AEO GEO DUBAI
     }
 
 }
+/* =========================================================
+   FINAL MOBILE MENU OVERRIDE
+   Must stay at the very bottom of style.css
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    /* Restore all mobile navigation items */
+    nav.primary-nav > a,
+    nav.primary-nav > a:not(.nav-cta) {
+        display: block !important;
+        width: 100%;
+    }
+
+    /* Restore Services menu container */
+    nav.primary-nav .nav-dropdown {
+        display: block !important;
+        width: 100%;
+    }
+
+    /* Services button */
+    nav.primary-nav .nav-dropdown > .services-toggle {
+        display: block !important;
+        width: 100%;
+    }
+
+    /* Keep submenu hidden until Services is tapped */
+    nav.primary-nav .nav-dropdown .dropdown-menu {
+        display: none !important;
+        position: static !important;
+        width: 100%;
+    }
+
+    /* Show Services submenu when opened */
+    nav.primary-nav .nav-dropdown.is-open .dropdown-menu {
+        display: block !important;
+    }
+
+    /* Main mobile nav is closed by default */
+    nav.primary-nav {
+        display: none !important;
+    }
+
+    /* Main mobile nav opens after hamburger tap */
+    nav.primary-nav.is-open {
+        display: flex !important;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+}
