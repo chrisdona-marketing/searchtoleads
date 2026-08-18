@@ -82,6 +82,101 @@ document.querySelectorAll(".lead-form").forEach(function(form){
   });
 });
 </script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
 
+  const menuToggle = document.querySelector(".mobile-menu-toggle");
+  const primaryNav = document.querySelector(".primary-nav");
+  const servicesDropdown = document.querySelector(".nav-dropdown");
+  const servicesToggle = document.querySelector(".services-toggle");
+
+  if (menuToggle && primaryNav) {
+
+    menuToggle.addEventListener("click", function () {
+
+      const isOpen = primaryNav.classList.toggle("is-open");
+
+      menuToggle.classList.toggle("is-open", isOpen);
+
+      menuToggle.setAttribute(
+        "aria-expanded",
+        isOpen ? "true" : "false"
+      );
+
+    });
+
+  }
+
+
+  if (servicesToggle && servicesDropdown) {
+
+    servicesToggle.addEventListener("click", function (event) {
+
+      if (window.innerWidth <= 900) {
+
+        event.preventDefault();
+
+        servicesDropdown.classList.toggle("is-open");
+
+      }
+
+    });
+
+  }
+
+
+  /* Close mobile menu after clicking a normal navigation link */
+  document
+    .querySelectorAll(".primary-nav > a, .dropdown-menu a")
+    .forEach(function (link) {
+
+      link.addEventListener("click", function () {
+
+        if (window.innerWidth <= 900) {
+
+          if (primaryNav) {
+            primaryNav.classList.remove("is-open");
+          }
+
+          if (menuToggle) {
+            menuToggle.classList.remove("is-open");
+            menuToggle.setAttribute("aria-expanded", "false");
+          }
+
+          if (servicesDropdown) {
+            servicesDropdown.classList.remove("is-open");
+          }
+
+        }
+
+      });
+
+    });
+
+
+  /* Reset menu if screen changes back to desktop */
+  window.addEventListener("resize", function () {
+
+    if (window.innerWidth > 900) {
+
+      if (primaryNav) {
+        primaryNav.classList.remove("is-open");
+      }
+
+      if (menuToggle) {
+        menuToggle.classList.remove("is-open");
+        menuToggle.setAttribute("aria-expanded", "false");
+      }
+
+      if (servicesDropdown) {
+        servicesDropdown.classList.remove("is-open");
+      }
+
+    }
+
+  });
+
+});
+</script>
 </body>
 </html>
