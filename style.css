@@ -2814,26 +2814,63 @@ RESPONSIVE
   width: 100% !important;
   min-width: 0;
 }
-/* =========================================
-   TOP HERO FORM PHONE FIELD ONLY
-========================================= */
+<div
+  class="form-group"
+  style="grid-column: 1 / -1;">
 
-.hero-form-card .quick-form .phone-row {
-  display: grid !important;
-  grid-template-columns: 110px minmax(160px, 1fr) !important;
-  gap: 10px !important;
-  width: 100% !important;
-}
+  <label for="hero-phone">
+    Phone / WhatsApp
+  </label>
 
-.hero-form-card .quick-form .phone-row select.country-code {
-  width: 110px !important;
-  min-width: 110px !important;
-  max-width: 110px !important;
-}
+  <div
+    style="
+      display: flex;
+      align-items: stretch;
+      gap: 10px;
+      width: 100%;
+    ">
 
-.hero-form-card .quick-form .phone-row input.phone-number {
-  width: 100% !important;
-  min-width: 160px !important;
-  max-width: none !important;
-  box-sizing: border-box !important;
-}
+    <select
+      class="country-code"
+      aria-label="Country code"
+      style="
+        flex: 0 0 115px;
+        width: 115px;
+        min-width: 115px;
+        box-sizing: border-box;
+      ">
+
+      <option value="+971" selected>🇦🇪 +971</option>
+      <option value="+91">🇮🇳 +91</option>
+      <option value="+966">🇸🇦 +966</option>
+      <option value="+974">🇶🇦 +974</option>
+      <option value="+973">🇧🇭 +973</option>
+      <option value="+965">🇰🇼 +965</option>
+      <option value="+968">🇴🇲 +968</option>
+      <option value="+44">🇬🇧 +44</option>
+      <option value="+1">🇺🇸 +1</option>
+      <option value="+61">🇦🇺 +61</option>
+      <option value="+65">🇸🇬 +65</option>
+      <option value="+92">🇵🇰 +92</option>
+      <option value="+20">🇪🇬 +20</option>
+
+    </select>
+
+    <input
+      id="hero-phone"
+      class="phone-number"
+      type="tel"
+      name="Phone"
+      autocomplete="tel"
+      inputmode="tel"
+      placeholder="50 123 4567"
+      style="
+        flex: 1 1 auto;
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+      ">
+
+  </div>
+
+</div>
