@@ -354,4 +354,11 @@
   display:block;
   border-radius:6px;
 }
+/* Fix blog hero heading colour */
+.blog-article-content .hero h1 {
+    color: #F3F5F3 !important;
+}
 
+.blog-article-content .hero h1 em {
+    color: #E7D9B8 !important;
+}
