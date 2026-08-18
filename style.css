@@ -606,7 +606,9 @@ HOMEPAGE HERO FORM
 .quick-grid {
     display: grid;
 
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(0, 1fr);
 
     gap: 10px;
 }
@@ -618,6 +620,8 @@ FORM ELEMENTS
 
 .form-group {
     margin-bottom: 12px;
+
+    min-width: 0;
 }
 
 .form-group label {
@@ -635,6 +639,7 @@ FORM ELEMENTS
 .form-group select,
 .form-group textarea {
     width: 100%;
+    min-width: 0;
 
     padding: 11px 12px;
 
@@ -650,6 +655,7 @@ FORM ELEMENTS
 
 .form-group textarea {
     min-height: 75px;
+
     resize: vertical;
 }
 
@@ -664,13 +670,76 @@ FORM ELEMENTS
         0 0 0 3px rgba(18,104,216,.08);
 }
 
+
+/* =========================================================
+NORMAL PHONE ROW
+========================================================= */
+
 .phone-row {
     display: grid;
 
-    grid-template-columns: 120px 1fr;
+    grid-template-columns:
+        120px
+        minmax(0,1fr);
 
     gap: 8px;
+
+    width: 100%;
+    min-width: 0;
 }
+
+.phone-row .country-code {
+    width: 100%;
+    min-width: 0;
+}
+
+.phone-row .phone-number {
+    width: 100%;
+    min-width: 0;
+}
+
+
+/* =========================================================
+HOMEPAGE HERO PHONE ROW
+========================================================= */
+
+.hero-phone-row {
+    display: grid !important;
+
+    grid-template-columns:
+        95px
+        minmax(0, 1fr) !important;
+
+    gap: 8px !important;
+
+    width: 100% !important;
+    min-width: 0 !important;
+}
+
+.hero-phone-row .country-code {
+    width: 95px !important;
+    min-width: 95px !important;
+    max-width: 95px !important;
+
+    padding-left: 7px !important;
+    padding-right: 22px !important;
+
+    box-sizing: border-box;
+}
+
+.hero-phone-row .phone-number {
+    width: 100% !important;
+
+    min-width: 0 !important;
+    max-width: none !important;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+FORM BUTTONS
+========================================================= */
 
 .hero-submit,
 .submit-btn {
@@ -708,7 +777,8 @@ FORM ELEMENTS
     display: grid;
 
     grid-template-columns:
-        1fr 1fr;
+        minmax(0,1fr)
+        minmax(0,1fr);
 
     gap: 12px;
 }
@@ -1105,6 +1175,14 @@ INDUSTRIES
     font-size: 16px;
 }
 
+.industry-card h3 {
+    margin-bottom: 6px;
+
+    color: var(--navy);
+
+    font-size: 17px;
+}
+
 .industry-card p {
     color: var(--muted);
 
@@ -1228,17 +1306,24 @@ TESTIMONIALS
     display: flex;
     align-items: center;
 
-    gap: 12px;
+    gap: 16px;
 }
 
 .initial {
-    width: 44px;
-    height: 44px;
+    width: 56px;
+    height: 56px;
 
-    flex: none;
+    min-width: 56px;
+    min-height: 56px;
 
-    display: grid;
-    place-items: center;
+    flex: 0 0 56px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
 
     border-radius: 50%;
 
@@ -1249,9 +1334,14 @@ TESTIMONIALS
             var(--cyan)
         );
 
-    color: white;
+    color: white !important;
 
-    font-weight: 850;
+    font-size: 16px;
+    font-weight: 800;
+
+    line-height: 1;
+
+    position: static;
 }
 
 .testimonial-person strong {
@@ -1260,7 +1350,7 @@ TESTIMONIALS
     color: white;
 }
 
-.testimonial-person span {
+.testimonial-person span:not(.initial) {
     display: block;
 
     color: #9fb3c8;
@@ -1333,11 +1423,6 @@ HOMEPAGE PRICING
 }
 
 .popular {
-    position: absolute;
-
-    top: 17px;
-    right: 17px;
-
     padding: 5px 8px;
 
     background: #eaf3ff;
@@ -1352,10 +1437,29 @@ HOMEPAGE PRICING
     letter-spacing: .7px;
 }
 
+.price-card > .popular {
+    position: static !important;
+
+    display: inline-block;
+
+    width: fit-content;
+
+    margin: 0 0 16px 0;
+
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+
+    transform: none !important;
+}
+
+.price-card > .popular + h3 {
+    padding-right: 0;
+}
+
 .price-card h3 {
     min-height: 57px;
-
-    padding-right: 35px;
 
     color: var(--navy);
 
@@ -1587,6 +1691,7 @@ WHY SEARCHTOLEADS
     color: var(--navy);
 }
 
+.why-item p,
 .why-item span {
     color: var(--muted);
 
@@ -1727,7 +1832,8 @@ CONTACT
     display: grid;
 
     grid-template-columns:
-        1fr 1fr;
+        minmax(0,1fr)
+        minmax(0,1fr);
 
     gap: 13px;
 }
@@ -2573,7 +2679,7 @@ SERVICE PAGE PRICING
 
 
 /* =========================================================
-RESPONSIVE
+RESPONSIVE - TABLET
 ========================================================= */
 
 @media (max-width: 1000px) {
@@ -2589,7 +2695,9 @@ RESPONSIVE
     }
 
     .hero-visual {
+        width: 100%;
         max-width: 620px;
+
         justify-self: start;
     }
 
@@ -2624,6 +2732,10 @@ RESPONSIVE
 
 }
 
+
+/* =========================================================
+RESPONSIVE - SMALL TABLET
+========================================================= */
 
 @media (max-width: 760px) {
 
@@ -2689,6 +2801,10 @@ RESPONSIVE
 }
 
 
+/* =========================================================
+RESPONSIVE - MOBILE
+========================================================= */
+
 @media (max-width: 560px) {
 
     .quick-grid,
@@ -2712,7 +2828,20 @@ RESPONSIVE
 
     .phone-row {
         grid-template-columns:
-            112px 1fr;
+            105px
+            minmax(0,1fr);
+    }
+
+    .hero-phone-row {
+        grid-template-columns:
+            105px
+            minmax(0,1fr) !important;
+    }
+
+    .hero-phone-row .country-code {
+        width: 105px !important;
+        min-width: 105px !important;
+        max-width: 105px !important;
     }
 
     .hero-form-card {
@@ -2747,90 +2876,3 @@ RESPONSIVE
     }
 
 }
-/* =========================================
-   FIX TESTIMONIAL AVATAR INITIALS
-========================================= */
-
-.testimonial-person {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.testimonial-person .initial {
-  width: 56px;
-  height: 56px;
-  min-width: 56px;
-  min-height: 56px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  margin: 0;
-  padding: 0;
-
-  border-radius: 50%;
-  line-height: 1;
-
-  font-size: 16px;
-  font-weight: 700;
-
-  position: static;
-}
-/* =========================================
-   FIX PRICING BADGE
-========================================= */
-
-.price-card > .popular {
-  position: static !important;
-  display: inline-block;
-
-  width: fit-content;
-  margin: 0 0 18px 0;
-
-  top: auto !important;
-  right: auto !important;
-  left: auto !important;
-  transform: none !important;
-}
-<div class="form-group">
-
-  <label for="hero-phone">
-    Phone / WhatsApp
-  </label>
-
-  <div class="hero-phone-row">
-
-    <select
-      class="country-code"
-      aria-label="Country code">
-
-      <option value="+971" selected>🇦🇪 +971</option>
-      <option value="+91">🇮🇳 +91</option>
-      <option value="+966">🇸🇦 +966</option>
-      <option value="+974">🇶🇦 +974</option>
-      <option value="+973">🇧🇭 +973</option>
-      <option value="+965">🇰🇼 +965</option>
-      <option value="+968">🇴🇲 +968</option>
-      <option value="+44">🇬🇧 +44</option>
-      <option value="+1">🇺🇸 +1</option>
-      <option value="+61">🇦🇺 +61</option>
-      <option value="+65">🇸🇬 +65</option>
-      <option value="+92">🇵🇰 +92</option>
-      <option value="+20">🇪🇬 +20</option>
-
-    </select>
-
-    <input
-      id="hero-phone"
-      class="phone-number"
-      type="tel"
-      name="Phone"
-      autocomplete="tel"
-      inputmode="tel"
-      placeholder="50 123 4567">
-
-  </div>
-
-</div>
